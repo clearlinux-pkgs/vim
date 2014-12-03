@@ -1,0 +1,1 @@
+ln -s vim %{buildroot}/usr/bin/vi

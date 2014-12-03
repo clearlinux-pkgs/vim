@@ -1,0 +1,47 @@
+diff -ru vim74-old/src/feature.h vim74/src/feature.h
+--- vim74-old/src/feature.h	2013-05-18 11:18:20.000000000 -0700
++++ vim74/src/feature.h	2015-02-17 11:16:21.831170978 -0800
+@@ -944,8 +944,10 @@
+ 
+ /*
+  * SYS_VIMRC_FILE	Name of the system-wide .vimrc file.
++ * SYS_VIMRC_FILE2	Name of the .vimrc file to override SYS_VIMRC_FILE.
+  */
+-/* #define SYS_VIMRC_FILE	"/etc/vimrc" */
++/* #define SYS_VIMRC_FILE	"$VIM/vimrc" */
++/* #define SYS_VIMRC_FILE2	"/etc/vimrc" */
+ 
+ /*
+  * SYS_GVIMRC_FILE	Name of the system-wide .gvimrc file.
+diff -ru vim74-old/src/main.c vim74/src/main.c
+--- vim74-old/src/main.c	2013-07-03 03:36:49.000000000 -0700
++++ vim74/src/main.c	2015-02-17 11:16:21.831170978 -0800
+@@ -2971,9 +2971,14 @@
+ 	/*
+ 	 * Get system wide defaults, if the file name is defined.
+ 	 */
++#ifdef SYS_VIMRC_FILE2
++	if (do_source((char_u *)SYS_VIMRC_FILE2, FALSE, DOSO_NONE) == FAIL)
++#endif
++	{
+ #ifdef SYS_VIMRC_FILE
+-	(void)do_source((char_u *)SYS_VIMRC_FILE, FALSE, DOSO_NONE);
++	    (void)do_source((char_u *)SYS_VIMRC_FILE, FALSE, DOSO_NONE);
+ #endif
++	}
+ #ifdef MACOS_X
+ 	(void)do_source((char_u *)"$VIMRUNTIME/macmap.vim", FALSE, DOSO_NONE);
+ #endif
+diff -ru vim74-old/src/os_unix.h vim74/src/os_unix.h
+--- vim74-old/src/os_unix.h	2013-06-12 11:09:44.000000000 -0700
++++ vim74/src/os_unix.h	2015-02-17 11:16:21.831170978 -0800
+@@ -243,6 +243,9 @@
+ #ifndef SYS_VIMRC_FILE
+ # define SYS_VIMRC_FILE "$VIM/vimrc"
+ #endif
++#ifndef SYS_VIMRC_FILE2
++# define SYS_VIMRC_FILE2 "/etc/vimrc"
++#endif
+ #ifndef SYS_GVIMRC_FILE
+ # define SYS_GVIMRC_FILE "$VIM/gvimrc"
+ #endif

@@ -1,0 +1,1 @@
+-with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte
