@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 7.4
-Release  : 20
+Release  : 21
 URL      : ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2
 Source0  : ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2
 Summary  : No detailed summary available
@@ -19,6 +19,7 @@ BuildRequires : ncurses-dev
 BuildRequires : pkgconfig(sm)
 BuildRequires : pkgconfig(x11)
 Patch1: stateless.patch
+Patch2: 0001-add-clearlinux-vimrc-file.patch
 
 %description
 This file explains the installation of Vim on VMS systems.
@@ -54,16 +55,18 @@ doc components for the vim package.
 %prep
 %setup -q -n vim74
 %patch1 -p1
+%patch2 -p1
 
 %build
 %configure --disable-static -with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte
-make V=1 %{?_smp_mflags}
+make V=1  %{?_smp_mflags}
 
 %install
 rm -rf %{buildroot}
 %make_install
 ## make_install_append content
 ln -s vim %{buildroot}/usr/bin/vi
+install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 ## make_install_append end
 
 %files
@@ -1716,6 +1719,7 @@ ln -s vim %{buildroot}/usr/bin/vi
 /usr/share/vim/vim74/tutor/tutor.zh_cn.utf-8
 /usr/share/vim/vim74/tutor/tutor.zh_tw.utf-8
 /usr/share/vim/vim74/vimrc_example.vim
+/usr/share/vim/vimrc
 
 %files doc
 %defattr(-,root,root,-)
