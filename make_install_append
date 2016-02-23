@@ -1,1 +1,2 @@
 ln -s vim %{buildroot}/usr/bin/vi
+install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
