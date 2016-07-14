@@ -1,1 +1,1 @@
--with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte
+-with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte --enable-luainterp

@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 7.4.2028
-Release  : 32
+Release  : 33
 URL      : https://github.com/vim/vim/archive/v7.4.2028.tar.gz
 Source0  : https://github.com/vim/vim/archive/v7.4.2028.tar.gz
 Summary  : No detailed summary available
@@ -15,6 +15,7 @@ Requires: vim-data
 Requires: vim-doc
 BuildRequires : acl-dev
 BuildRequires : attr-dev
+BuildRequires : lua-dev
 BuildRequires : ncurses-dev
 BuildRequires : pkgconfig(sm)
 BuildRequires : pkgconfig(x11)
@@ -63,7 +64,7 @@ doc components for the vim package.
 
 %build
 export LANG=C
-%configure --disable-static -with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte
+%configure --disable-static -with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte --enable-luainterp
 make V=1  %{?_smp_mflags}
 
 %install
