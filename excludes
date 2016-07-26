@@ -1,2 +1,6 @@
 /usr/share/vim/vim73/tools/vim132
 /usr/share/vim/vim74/tools/vim132
+/usr/share/vim/vim74/compiler/go.vim
+/usr/share/vim/vim74/indent/go.vim
+/usr/share/vim/vim74/syntax/go.vim
+/usr/share/vim/vim74/ftplugin/go.vim
