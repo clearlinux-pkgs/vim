@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 7.4.2102
-Release  : 36
+Release  : 37
 URL      : https://github.com/vim/vim/archive/v7.4.2102.tar.gz
 Source0  : https://github.com/vim/vim/archive/v7.4.2102.tar.gz
 Summary  : No detailed summary available
@@ -94,6 +94,10 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 
 %files data
 %defattr(-,root,root,-)
+%exclude /usr/share/vim/vim74/compiler/go.vim
+%exclude /usr/share/vim/vim74/ftplugin/go.vim
+%exclude /usr/share/vim/vim74/indent/go.vim
+%exclude /usr/share/vim/vim74/syntax/go.vim
 %exclude /usr/share/vim/vim74/tools/vim132
 /usr/share/man/fr.ISO8859-1/man1/evim.1
 /usr/share/man/fr.ISO8859-1/man1/ex.1
@@ -286,7 +290,6 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim74/compiler/gcc.vim
 /usr/share/vim/vim74/compiler/gfortran.vim
 /usr/share/vim/vim74/compiler/gnat.vim
-/usr/share/vim/vim74/compiler/go.vim
 /usr/share/vim/vim74/compiler/haml.vim
 /usr/share/vim/vim74/compiler/hp_acc.vim
 /usr/share/vim/vim74/compiler/icc.vim
@@ -527,7 +530,6 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim74/ftplugin/gitconfig.vim
 /usr/share/vim/vim74/ftplugin/gitrebase.vim
 /usr/share/vim/vim74/ftplugin/gitsendemail.vim
-/usr/share/vim/vim74/ftplugin/go.vim
 /usr/share/vim/vim74/ftplugin/gpg.vim
 /usr/share/vim/vim74/ftplugin/gprof.vim
 /usr/share/vim/vim74/ftplugin/groovy.vim
@@ -711,7 +713,6 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim74/indent/framescript.vim
 /usr/share/vim/vim74/indent/gitconfig.vim
 /usr/share/vim/vim74/indent/gitolite.vim
-/usr/share/vim/vim74/indent/go.vim
 /usr/share/vim/vim74/indent/haml.vim
 /usr/share/vim/vim74/indent/hamster.vim
 /usr/share/vim/vim74/indent/hog.vim
@@ -1320,7 +1321,6 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim74/syntax/gkrellmrc.vim
 /usr/share/vim/vim74/syntax/gnash.vim
 /usr/share/vim/vim74/syntax/gnuplot.vim
-/usr/share/vim/vim74/syntax/go.vim
 /usr/share/vim/vim74/syntax/godoc.vim
 /usr/share/vim/vim74/syntax/gp.vim
 /usr/share/vim/vim74/syntax/gpg.vim
