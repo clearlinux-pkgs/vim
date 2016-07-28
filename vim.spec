@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 7.4.2102
-Release  : 37
+Release  : 38
 URL      : https://github.com/vim/vim/archive/v7.4.2102.tar.gz
 Source0  : https://github.com/vim/vim/archive/v7.4.2102.tar.gz
 Summary  : No detailed summary available
@@ -20,7 +20,6 @@ BuildRequires : lua-dev
 BuildRequires : ncurses-dev
 BuildRequires : pkgconfig(sm)
 BuildRequires : pkgconfig(x11)
-BuildRequires : ruby
 Patch1: stateless.patch
 Patch2: 0001-add-clearlinux-vimrc-file.patch
 
@@ -66,7 +65,7 @@ doc components for the vim package.
 
 %build
 export LANG=C
-%configure --disable-static -with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte --enable-luainterp --enable-pythoninterp -enable-rubyinterp --enable-cscope
+%configure --disable-static -with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte --enable-luainterp --enable-pythoninterp --enable-cscope
 make V=1  %{?_smp_mflags}
 
 %install
