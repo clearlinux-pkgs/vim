@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 7.4.2102
-Release  : 38
+Release  : 39
 URL      : https://github.com/vim/vim/archive/v7.4.2102.tar.gz
 Source0  : https://github.com/vim/vim/archive/v7.4.2102.tar.gz
 Summary  : No detailed summary available
@@ -20,6 +20,7 @@ BuildRequires : lua-dev
 BuildRequires : ncurses-dev
 BuildRequires : pkgconfig(sm)
 BuildRequires : pkgconfig(x11)
+BuildRequires : python-dev
 Patch1: stateless.patch
 Patch2: 0001-add-clearlinux-vimrc-file.patch
 
