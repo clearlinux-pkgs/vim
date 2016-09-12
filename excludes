@@ -1,9 +1,9 @@
 /usr/share/vim/vim73/tools/vim132
-/usr/share/vim/vim74/tools/vim132
-/usr/share/vim/vim74/compiler/go.vim
-/usr/share/vim/vim74/indent/go.vim
-/usr/share/vim/vim74/syntax/go.vim
-/usr/share/vim/vim74/ftplugin/go.vim
+/usr/share/vim/vim80/tools/vim132
+/usr/share/vim/vim80/compiler/go.vim
+/usr/share/vim/vim80/indent/go.vim
+/usr/share/vim/vim80/syntax/go.vim
+/usr/share/vim/vim80/ftplugin/go.vim
 /usr/share/applications/gvim.desktop
 /usr/share/applications/vim.desktop
 /usr/share/icons/hicolor/48x48/apps/gvim.png

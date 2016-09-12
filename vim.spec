@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.0.0002
-Release  : 45
+Release  : 46
 URL      : https://github.com/vim/vim/archive/v8.0.0002.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.0.0002.tar.gz
 Summary  : No detailed summary available
@@ -99,6 +99,11 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 %exclude /usr/share/icons/hicolor/48x48/apps/gvim.png
 %exclude /usr/share/icons/locolor/16x16/apps/gvim.png
 %exclude /usr/share/icons/locolor/32x32/apps/gvim.png
+%exclude /usr/share/vim/vim80/compiler/go.vim
+%exclude /usr/share/vim/vim80/ftplugin/go.vim
+%exclude /usr/share/vim/vim80/indent/go.vim
+%exclude /usr/share/vim/vim80/syntax/go.vim
+%exclude /usr/share/vim/vim80/tools/vim132
 /usr/share/man/fr.ISO8859-1/man1/evim.1
 /usr/share/man/fr.ISO8859-1/man1/ex.1
 /usr/share/man/fr.ISO8859-1/man1/rview.1
@@ -290,7 +295,6 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim80/compiler/gcc.vim
 /usr/share/vim/vim80/compiler/gfortran.vim
 /usr/share/vim/vim80/compiler/gnat.vim
-/usr/share/vim/vim80/compiler/go.vim
 /usr/share/vim/vim80/compiler/haml.vim
 /usr/share/vim/vim80/compiler/hp_acc.vim
 /usr/share/vim/vim80/compiler/icc.vim
@@ -532,7 +536,6 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim80/ftplugin/gitconfig.vim
 /usr/share/vim/vim80/ftplugin/gitrebase.vim
 /usr/share/vim/vim80/ftplugin/gitsendemail.vim
-/usr/share/vim/vim80/ftplugin/go.vim
 /usr/share/vim/vim80/ftplugin/gpg.vim
 /usr/share/vim/vim80/ftplugin/gprof.vim
 /usr/share/vim/vim80/ftplugin/groovy.vim
@@ -717,7 +720,6 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim80/indent/framescript.vim
 /usr/share/vim/vim80/indent/gitconfig.vim
 /usr/share/vim/vim80/indent/gitolite.vim
-/usr/share/vim/vim80/indent/go.vim
 /usr/share/vim/vim80/indent/haml.vim
 /usr/share/vim/vim80/indent/hamster.vim
 /usr/share/vim/vim80/indent/hog.vim
@@ -1328,7 +1330,6 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim80/syntax/gkrellmrc.vim
 /usr/share/vim/vim80/syntax/gnash.vim
 /usr/share/vim/vim80/syntax/gnuplot.vim
-/usr/share/vim/vim80/syntax/go.vim
 /usr/share/vim/vim80/syntax/godoc.vim
 /usr/share/vim/vim80/syntax/gp.vim
 /usr/share/vim/vim80/syntax/gpg.vim
@@ -1746,7 +1747,6 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim80/tools/shtags.1
 /usr/share/vim/vim80/tools/shtags.pl
 /usr/share/vim/vim80/tools/unicode.vim
-/usr/share/vim/vim80/tools/vim132
 /usr/share/vim/vim80/tools/vim_vs_net.cmd
 /usr/share/vim/vim80/tools/vimm
 /usr/share/vim/vim80/tools/vimspell.sh
