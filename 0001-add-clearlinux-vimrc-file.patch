@@ -1,19 +1,19 @@
-From 9b20dea066aea22a25a720b2433090a3eed302db Mon Sep 17 00:00:00 2001
+From b025567d1b4754914b4508b8469fe7daf3f46d52 Mon Sep 17 00:00:00 2001
 From: "Simental Magana, Marcos" <marcos.simental.magana@intel.com>
 Date: Tue, 23 Feb 2016 08:54:02 -0600
 Subject: [PATCH] add clearlinux vimrc file
 
 ---
- vimrc | 17 +++++++++++++++++
- 1 file changed, 17 insertions(+)
+ vimrc | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
  create mode 100644 vimrc
 
 diff --git a/vimrc b/vimrc
 new file mode 100644
-index 0000000..f4cb3ec
+index 0000000..651fc46
 --- /dev/null
 +++ b/vimrc
-@@ -0,0 +1,17 @@
+@@ -0,0 +1,18 @@
 +"Clear Linux stateless vim configuration
 +
 +set nocompatible
@@ -27,10 +27,11 @@ index 0000000..f4cb3ec
 +set incsearch                  " incremental search
 +set hlsearch                   " highlight the search
 +set history=25                 " keep 25 lines of command line history
++set mouse=r                    " text selection not to change to VISUAL mode
 +
 +" Don't wake up system with blinking cursor:
 +" " http://www.linuxpowertop.org/known.php
 +let &guicursor = &guicursor . ",a:blinkon0"
 -- 
-2.4.3
+2.10.2
 
