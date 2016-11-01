@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.0.0054
-Release  : 54
+Release  : 55
 URL      : https://github.com/vim/vim/archive/v8.0.0054.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.0.0054.tar.gz
 Summary  : No detailed summary available
