@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.0.0066
-Release  : 56
+Release  : 57
 URL      : https://github.com/vim/vim/archive/v8.0.0066.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.0.0066.tar.gz
 Summary  : No detailed summary available
