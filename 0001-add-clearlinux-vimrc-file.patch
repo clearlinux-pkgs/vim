@@ -1,19 +1,33 @@
-From b025567d1b4754914b4508b8469fe7daf3f46d52 Mon Sep 17 00:00:00 2001
+From b1f481c4f9d2831e89098f3244a16337e1be55cd Mon Sep 17 00:00:00 2001
 From: "Simental Magana, Marcos" <marcos.simental.magana@intel.com>
 Date: Tue, 23 Feb 2016 08:54:02 -0600
 Subject: [PATCH] add clearlinux vimrc file
 
 ---
- vimrc | 18 ++++++++++++++++++
- 1 file changed, 18 insertions(+)
+ runtime/defaults.vim |  2 +-
+ vimrc                | 17 +++++++++++++++++
+ 2 files changed, 18 insertions(+), 1 deletion(-)
  create mode 100644 vimrc
 
+diff --git a/runtime/defaults.vim b/runtime/defaults.vim
+index 43ff1e0..2bf90f0 100644
+--- a/runtime/defaults.vim
++++ b/runtime/defaults.vim
+@@ -67,7 +67,7 @@ inoremap <C-U> <C-G>u<C-U>
+ " In many terminal emulators the mouse works just fine.  By enabling it you
+ " can position the cursor, Visually select and scroll with the mouse.
+ if has('mouse')
+-  set mouse=a
++  set mouse=r
+ endif
+ 
+ " Switch syntax highlighting on when the terminal has colors or when using the
 diff --git a/vimrc b/vimrc
 new file mode 100644
-index 0000000..651fc46
+index 0000000..de561ba
 --- /dev/null
 +++ b/vimrc
-@@ -0,0 +1,18 @@
+@@ -0,0 +1,17 @@
 +"Clear Linux stateless vim configuration
 +
 +set nocompatible
@@ -27,7 +41,6 @@ index 0000000..651fc46
 +set incsearch                  " incremental search
 +set hlsearch                   " highlight the search
 +set history=25                 " keep 25 lines of command line history
-+set mouse=r                    " text selection not to change to VISUAL mode
 +
 +" Don't wake up system with blinking cursor:
 +" " http://www.linuxpowertop.org/known.php
