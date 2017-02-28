@@ -4,9 +4,9 @@
 #
 Name     : vim
 Version  : 1
-Release  : 68
-URL      : http://github.com/vim/vim/archive/v8.0.0362.tar.gz
-Source0  : http://github.com/vim/vim/archive/v8.0.0362.tar.gz
+Release  : 69
+URL      : http://github.com/vim/vim/archive/v8.0.0381.tar.gz
+Source0  : http://github.com/vim/vim/archive/v8.0.0381.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT Vim
@@ -61,18 +61,18 @@ doc components for the vim package.
 
 
 %prep
-%setup -q -n vim-8.0.0362
+%setup -q -n vim-8.0.0381
 %patch1 -p1
 %patch2 -p1
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1487947523
+export SOURCE_DATE_EPOCH=1488307109
 %configure --disable-static -with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte --enable-luainterp --enable-pythoninterp --enable-cscope
 make V=1  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1487947523
+export SOURCE_DATE_EPOCH=1488307109
 rm -rf %{buildroot}
 %make_install
 ## make_install_append content
