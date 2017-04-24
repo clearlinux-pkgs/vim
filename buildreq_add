@@ -6,3 +6,5 @@ ncurses-dev
 lua-dev
 gmp-dev
 python-dev
+python3-dev
+
