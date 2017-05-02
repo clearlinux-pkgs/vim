@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.0.0596
-Release  : 79
+Release  : 80
 URL      : https://github.com/vim/vim/archive/v8.0.0596.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.0.0596.tar.gz
 Summary  : No detailed summary available
