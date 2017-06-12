@@ -1,0 +1,74 @@
+Configure miss: --enable-fail-if-missing argument
+Configure miss: BeOS
+Configure miss: QNX
+Configure miss: Darwin (Mac OS X)
+Configure miss: AvailabilityMacros.h usability
+Configure miss: AvailabilityMacros.h presence
+Configure miss: AvailabilityMacros.h
+Configure miss: --with-global-runtime argument
+Configure miss: --with-modified-by argument
+Configure miss: if character set is EBCDIC
+Configure miss: --disable-smack argument
+Configure miss: XATTR_NAME_SMACKEXEC in linux/xattr.h
+Configure miss: --disable-selinux argument
+Configure miss: --with-compiledby argument
+Configure miss: --disable-xsmp argument
+Configure miss: --disable-xsmp-interact argument
+Configure miss: --with-lua-prefix argument
+Configure miss: LUA_PREFIX environment var
+Configure miss: --with-luajit
+Configure miss: --enable-mzschemeinterp argument
+Configure miss: --enable-perlinterp argument
+Configure miss: whether we can do without RTLD_GLOBAL for Python
+Configure miss: --enable-tclinterp argument
+Configure miss: --enable-rubyinterp argument
+Configure miss: --enable-workshop argument
+Configure miss: --disable-netbeans argument
+Configure miss: --disable-channel argument
+Configure miss: --enable-hangulinput argument
+Configure miss: --enable-fontset argument
+Configure miss: if X11 header files can be found
+Configure miss: --enable-gui argument
+Configure miss: CYGWIN or MSYS environment
+Configure miss: whether toupper is broken
+Configure miss: sys/stream.h usability
+Configure miss: sys/stream.h presence
+Configure miss: sys/stream.h
+Configure miss: libc.h usability
+Configure miss: libc.h presence
+Configure miss: libc.h
+Configure miss: util/debug.h usability
+Configure miss: util/debug.h presence
+Configure miss: util/debug.h
+Configure miss: util/msg18n.h usability
+Configure miss: util/msg18n.h presence
+Configure miss: util/msg18n.h
+Configure miss: frame.h usability
+Configure miss: frame.h presence
+Configure miss: frame.h
+Configure miss: sys/access.h usability
+Configure miss: sys/access.h presence
+Configure miss: sys/access.h
+Configure miss: sys/ptem.h
+Configure miss: pthread_np.h
+Configure miss: whether stack_t has an ss_base field
+Configure miss: whether tputs() uses outfuntype
+Configure miss: /dev/ptc
+Configure miss: getcwd implementation is broken
+Configure miss: getpseudotty
+Configure miss: sigsetjmp
+Configure miss: sigvec
+Configure miss: whether stat() ignores a trailing slash
+Configure miss: --disable-acl argument
+Configure miss: acl_get_file in -lposix1e
+Configure miss: acl_get in -lsec
+Configure miss: Solaris ACL support
+Configure miss: AIX ACL support
+Configure miss: --disable-gpm argument
+Configure miss: gpm
+Configure miss: --disable-sysmouse argument
+Configure miss: sysmouse
+Configure miss: sysctl
+Configure miss: _xpg4_setrunelocale in -lxpg4
+Configure miss: --disable-nls argument
+Configure miss: dlopen()
