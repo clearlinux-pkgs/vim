@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.0.0642
-Release  : 94
+Release  : 95
 URL      : https://github.com/vim/vim/archive/v8.0.0642.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.0.0642.tar.gz
 Summary  : No detailed summary available
@@ -71,12 +71,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1497379045
+export SOURCE_DATE_EPOCH=1497392522
 %configure --disable-static --with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte --enable-luainterp --enable-pythoninterp --enable-cscope  --enable-python3interp
 make V=1  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1497379045
+export SOURCE_DATE_EPOCH=1497392522
 rm -rf %{buildroot}
 %make_install
 ## make_install_append content
