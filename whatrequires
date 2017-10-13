@@ -32,6 +32,7 @@ clutter-gtk
 cogl
 colord
 colord-gtk
+comedilib
 dbus
 dconf
 docker
@@ -59,6 +60,8 @@ gnome-panel
 gnome-session
 gnutls
 gobject-introspection
+goocanvas
+gpgme
 grilo
 gst-plugins-bad
 gst-plugins-base
