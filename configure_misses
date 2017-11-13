@@ -25,6 +25,7 @@ Configure miss: --enable-rubyinterp argument
 Configure miss: --enable-workshop argument
 Configure miss: --disable-netbeans argument
 Configure miss: --disable-channel argument
+Configure miss: --enable-autoservername argument
 Configure miss: --enable-hangulinput argument
 Configure miss: --enable-fontset argument
 Configure miss: if X11 header files can be found
