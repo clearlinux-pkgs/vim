@@ -38,6 +38,7 @@ dconf
 docker
 edk2
 eog
+evince
 exo
 faba-icon-theme
 filesystem
@@ -121,6 +122,7 @@ libtasn1
 libuser
 libvirt
 libvirt-glib
+libvpx
 libwnck
 libwnck3
 libxfce4ui
@@ -168,6 +170,7 @@ uhttpmock
 upower
 util-linux
 virt-viewer
+vlc
 vte
 wayland
 webkitgtk
