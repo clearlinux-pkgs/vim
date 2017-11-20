@@ -69,7 +69,6 @@ gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
 gstreamer
-gstreamer-vaapi
 gtk+
 gtk-doc
 gtk3
