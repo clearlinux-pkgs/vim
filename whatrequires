@@ -112,6 +112,7 @@ libgusb
 libgweather
 libidn
 libjpeg-turbo
+libmediaart
 libnotify
 libosinfo
 libpeas
@@ -145,6 +146,7 @@ nautilus
 ndctl
 network-manager-applet
 nodejs
+notmuch
 numactl
 orc
 ostree
