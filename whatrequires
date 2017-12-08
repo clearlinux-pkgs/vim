@@ -16,6 +16,7 @@ adwaita-icon-theme
 alsa-utils
 apache-ant
 apache-zookeeper
+appstream-glib
 at-spi2-core
 atk
 audit
@@ -45,8 +46,10 @@ filesystem
 flatpak
 fontsproto
 garcon
+gcab
 gcr
 gdk-pixbuf
+gedit
 geoclue
 geocode-glib
 gimp
@@ -64,6 +67,7 @@ gobject-introspection
 goocanvas
 gpgme
 grilo
+gspell
 gst-plugins-bad
 gst-plugins-base
 gst-plugins-good
@@ -113,6 +117,7 @@ libgweather
 libidn
 libjpeg-turbo
 libmediaart
+libnice
 libnotify
 libosinfo
 libpeas
@@ -171,6 +176,7 @@ tracker
 uhttpmock
 upower
 util-linux
+virt-manager
 virt-viewer
 vlc
 vte
