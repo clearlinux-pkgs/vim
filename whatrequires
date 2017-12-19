@@ -30,6 +30,7 @@ chrome-gnome-shell
 clutter
 clutter-gst
 clutter-gtk
+cockpit
 cogl
 colord
 colord-gtk
@@ -42,6 +43,7 @@ eog
 evince
 exo
 faba-icon-theme
+farstream
 filesystem
 flatpak
 fontsproto
@@ -116,6 +118,7 @@ libgusb
 libgweather
 libidn
 libjpeg-turbo
+libjpeg-turbo-soname8
 libmediaart
 libnice
 libnotify
@@ -173,12 +176,14 @@ tigervnc
 totem
 totem-pl-parser
 tracker
+udisks2
 uhttpmock
 upower
 util-linux
 virt-manager
 virt-viewer
 vlc
+volume_key
 vte
 wayland
 webkitgtk
