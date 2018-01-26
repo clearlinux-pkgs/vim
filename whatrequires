@@ -14,8 +14,7 @@ R-roxygen2
 accountsservice
 adwaita-icon-theme
 alsa-utils
-apache-ant
-apache-zookeeper
+apache-spark
 appstream-glib
 at-spi2-core
 atk
@@ -197,3 +196,4 @@ xorg-server
 xproto
 xtrans
 yasm
+yelp
