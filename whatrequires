@@ -145,6 +145,7 @@ linux-hyperv-lts
 linux-hyperv-mini
 linux-kvm
 linux-lts
+linux-pk414
 linux-tools
 man-db
 man-pages
@@ -165,7 +166,6 @@ polkit
 quilt
 recordproto
 rest
-scala
 scrnsaverproto
 shim
 spice-gtk

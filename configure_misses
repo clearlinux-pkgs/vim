@@ -25,7 +25,6 @@ Configure miss: --enable-rubyinterp argument
 Configure miss: --enable-workshop argument
 Configure miss: --disable-netbeans argument
 Configure miss: --disable-channel argument
-Configure miss: gethostbyname in -lnsl
 Configure miss: --enable-autoservername argument
 Configure miss: --enable-hangulinput argument
 Configure miss: --enable-fontset argument
