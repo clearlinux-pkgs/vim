@@ -53,6 +53,7 @@ gdk-pixbuf
 gedit
 geoclue
 geocode-glib
+gexiv2
 gimp
 git
 glib
