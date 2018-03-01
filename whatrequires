@@ -37,6 +37,7 @@ comedilib
 dbus
 dconf
 docker
+dstat
 edk2
 eog
 evince
