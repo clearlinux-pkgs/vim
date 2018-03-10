@@ -55,6 +55,7 @@ gedit
 geoclue
 geocode-glib
 gexiv2
+gfbgraph
 gimp
 git
 glib
@@ -67,9 +68,12 @@ gnome-panel
 gnome-session
 gnutls
 gobject-introspection
+gom
 goocanvas
 gpgme
+graphene
 grilo
+gsound
 gspell
 gst-plugins-bad
 gst-plugins-base
@@ -84,6 +88,7 @@ gtksourceview
 gtkspell3
 gvfs
 gzip
+hamlib
 harfbuzz
 hexchat
 ibus
@@ -107,9 +112,11 @@ libXt
 libXtst
 libbytesize
 libcanberra
+libchamplain
 libcroco
 libcryptui
 libgdata
+libgepub
 libglade
 libgnome-keyring
 libgsystem
