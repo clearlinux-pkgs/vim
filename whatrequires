@@ -9,6 +9,10 @@ R
 R-IRkernel
 R-NMF
 R-RcppProgress
+R-bayesplot
+R-brms
+R-broom
+R-caret
 R-devtools
 R-doRNG
 R-ggjoy
@@ -17,10 +21,12 @@ R-git2r
 R-modelr
 R-pbdZMQ
 R-pkgmaker
+R-recipes
 R-reprex
 R-rngtools
 R-roxygen2
 R-rstanarm
+R-shinystan
 R-tidyverse
 accountsservice
 adwaita-icon-theme
