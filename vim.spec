@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.0.1658
-Release  : 325
+Release  : 326
 URL      : https://github.com/vim/vim/archive/v8.0.1658.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.0.1658.tar.gz
 Summary  : Abstract VT220/Xterm/ECMA-48 emulation library
@@ -69,12 +69,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1522764202
+export SOURCE_DATE_EPOCH=1522766124
 %configure --disable-static --with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte --enable-luainterp --enable-pythoninterp --enable-cscope  --enable-python3interp
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1522764202
+export SOURCE_DATE_EPOCH=1522766124
 rm -rf %{buildroot}
 %make_install
 ## make_install_append content
