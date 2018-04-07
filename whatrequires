@@ -80,7 +80,9 @@ gnome-panel
 gnome-photos
 gnome-session
 gnome-settings-daemon
+gnome-shell
 gnome-system-monitor
+gnome-terminal
 gnutls
 gobject-introspection
 gom
@@ -173,6 +175,7 @@ linux-tools
 man-db
 man-pages
 moka-icon-theme
+mutter
 nasm
 nautilus
 ndctl
@@ -181,6 +184,7 @@ nodejs
 notmuch
 numactl
 orc
+orca
 ostree
 p7zip
 pango
