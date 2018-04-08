@@ -215,6 +215,7 @@ vte
 wayland
 webkitgtk
 xcmiscproto
+xdg-desktop-portal
 xdg-utils
 xextproto
 xfce4-panel
