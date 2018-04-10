@@ -132,6 +132,7 @@ libcanberra
 libchamplain
 libcroco
 libcryptui
+libdazzle
 libgdata
 libgepub
 libglade
@@ -207,6 +208,7 @@ udisks2
 uhttpmock
 upower
 util-linux
+vala
 virt-manager
 virt-viewer
 vlc
