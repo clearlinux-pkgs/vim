@@ -19,6 +19,8 @@ Configure miss: LUA_PREFIX environment var
 Configure miss: --with-luajit
 Configure miss: --enable-mzschemeinterp argument
 Configure miss: --enable-perlinterp argument
+Configure miss: --with-python-command argument
+Configure miss: --with-python3-command argument
 Configure miss: whether we can do without RTLD_GLOBAL for Python
 Configure miss: --enable-tclinterp argument
 Configure miss: --enable-rubyinterp argument
