@@ -58,6 +58,7 @@ file-roller
 filesystem
 flatpak
 fontsproto
+fwupd
 garcon
 gcab
 gcr
@@ -111,6 +112,7 @@ hamlib
 harfbuzz
 hexchat
 ibus
+intel-gpu-tools
 isa-l
 jedi-vim
 json-glib
