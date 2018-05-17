@@ -30,7 +30,6 @@ atk
 audit
 autofs
 babl
-bigreqsproto
 cairo
 ceph
 cheese
@@ -57,7 +56,6 @@ farstream
 file-roller
 filesystem
 flatpak
-fontsproto
 fwupd
 garcon
 gcab
@@ -116,7 +114,6 @@ intel-gpu-tools
 isa-l
 jedi-vim
 json-glib
-kbproto
 kmod
 krb5
 libICE
@@ -189,6 +186,7 @@ network-manager-applet
 nodejs
 notmuch
 numactl
+oath-toolkit
 orc
 orca
 ostree
@@ -197,9 +195,7 @@ pango
 patchutils
 polkit
 quilt
-recordproto
 rest
-scrnsaverproto
 shim
 spice-gtk
 swig
@@ -221,15 +217,13 @@ volume_key
 vte
 wayland
 webkitgtk
-xcmiscproto
 xdg-desktop-portal
 xdg-utils
-xextproto
 xfce4-panel
 xfconf
 xmlto
 xorg-server
-xproto
+xorgproto
 xtrans
 yasm
 yelp
