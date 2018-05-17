@@ -8,7 +8,6 @@ OpenSP
 R
 R-IRkernel
 R-NMF
-R-RcppProgress
 R-devtools
 R-doRNG
 R-git2r
