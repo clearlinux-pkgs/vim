@@ -200,6 +200,7 @@ spice-gtk
 swig
 telepathy-glib
 telepathy-logger
+texlive
 tigervnc
 totem
 totem-pl-parser
