@@ -6,13 +6,11 @@ ModemManager
 NetworkManager
 OpenSP
 R
-R-IRkernel
 R-NMF
 R-devtools
 R-doRNG
 R-git2r
 R-modelr
-R-pbdZMQ
 R-pkgmaker
 R-reprex
 R-rngtools
@@ -163,6 +161,7 @@ libwnck3
 libxfce4ui
 libxfce4util
 libxklavier
+libzmq
 linux
 linux-aws
 linux-gce
