@@ -43,6 +43,7 @@ comedilib
 compat-gtksourceview-soname3
 dbus
 dconf
+dconf-editor
 docker
 dstat
 edk2
