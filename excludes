@@ -14,3 +14,7 @@
 /usr/share/vim/vim81/autoload/go/test-fixtures/def/jump.go
 /usr/share/vim/vim81/autoload/go/test-fixtures/fmt/hello.go
 /usr/share/vim/vim81/autoload/go/test-fixtures/fmt/hello_golden.go
+/usr/share/vim/vim81/compiler/go.vim
+/usr/share/vim/vim81/ftplugin/go.vim
+/usr/share/vim/vim81/indent/go.vim
+/usr/share/vim/vim81/syntax/go.vim
