@@ -253,11 +253,13 @@ libgweather
 libidn
 libjpeg-turbo
 libjpeg-turbo-soname8
+libmbim
 libmediaart
 libnice
 libnotify
 libosinfo
 libpeas
+libqmi
 librsvg
 libsecret
 libsoup
