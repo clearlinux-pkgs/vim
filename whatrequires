@@ -249,7 +249,6 @@ libgsystem
 libgtop
 libgudev
 libgusb
-libgweather
 libidn
 libjpeg-turbo
 libjpeg-turbo-soname8
