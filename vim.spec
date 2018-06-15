@@ -22,7 +22,7 @@ BuildRequires : lua-dev
 BuildRequires : ncurses-dev
 BuildRequires : pkgconfig(sm)
 BuildRequires : pkgconfig(x11)
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : qtbase-extras
 Patch1: stateless.patch
