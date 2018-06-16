@@ -286,6 +286,7 @@ linux-pk414
 linux-tools
 man-db
 man-pages
+meld
 moka-icon-theme
 mutter
 nasm
@@ -314,7 +315,6 @@ telepathy-logger
 texlive
 tigervnc
 totem
-totem-pl-parser
 tracker
 udisks2
 uhttpmock
