@@ -5,3 +5,4 @@
 # Autospec detects *.pro files in the tree and adds qtbase-dev as a dependency,
 # but those files are not at all qmake related...
 qtbase-dev
+python-core
