@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.0125
-Release  : 428
+Release  : 429
 URL      : https://github.com/vim/vim/archive/v8.1.0125.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.0125.tar.gz
 Summary  : Abstract VT220/Xterm/ECMA-48 emulation library
@@ -22,7 +22,7 @@ BuildRequires : lua-dev
 BuildRequires : ncurses-dev
 BuildRequires : pkgconfig(sm)
 BuildRequires : pkgconfig(x11)
-BuildRequires : python-dev
+BuildRequires : python-core
 BuildRequires : python3-dev
 BuildRequires : qtbase-extras
 Patch1: stateless.patch
@@ -81,12 +81,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1530208892
+export SOURCE_DATE_EPOCH=1530210142
 %configure --disable-static --with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte --enable-luainterp --enable-pythoninterp --enable-cscope  --enable-python3interp
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1530208892
+export SOURCE_DATE_EPOCH=1530210142
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/vim
 cp src/xpm/COPYRIGHT %{buildroot}/usr/share/doc/vim/src_xpm_COPYRIGHT
