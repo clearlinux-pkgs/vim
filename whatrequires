@@ -75,7 +75,6 @@ R-effects
 R-eiPack
 R-elliptic
 R-emmeans
-R-etm
 R-expsmooth
 R-fAssets
 R-fCopulae
@@ -237,6 +236,7 @@ gnome-autoar
 gnome-bluetooth
 gnome-control-center
 gnome-desktop
+gnome-logs
 gnome-music
 gnome-online-accounts
 gnome-panel
@@ -310,6 +310,7 @@ libjpeg-turbo
 libjpeg-turbo-soname8
 libmbim
 libmediaart
+libmodulemd
 libnice
 libnotify
 libosinfo
@@ -378,6 +379,7 @@ unison
 upower
 util-linux
 vala
+vinagre
 virt-manager
 virt-viewer
 vlc
