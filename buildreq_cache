@@ -1,6 +1,6 @@
-8.1.0200
-pkgconfig(sm)
+8.1.0203
+elfutils-dev
+attr-dev
 pkgconfig(x11)
 acl-dev
-attr-dev
-elfutils-dev
+pkgconfig(sm)
