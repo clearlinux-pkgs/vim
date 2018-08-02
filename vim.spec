@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.0233
-Release  : 458
+Release  : 459
 URL      : https://github.com/vim/vim/archive/v8.1.0233.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.0233.tar.gz
 Summary  : Abstract VT220/Xterm/ECMA-48 emulation library
