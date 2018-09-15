@@ -9,7 +9,9 @@ Configure miss: --with-global-runtime argument
 Configure miss: --with-modified-by argument
 Configure miss: if character set is EBCDIC
 Configure miss: --disable-smack argument
-Configure miss: XATTR_NAME_SMACKEXEC in linux/xattr.h
+Configure miss: attr/xattr.h usability
+Configure miss: attr/xattr.h presence
+Configure miss: attr/xattr.h
 Configure miss: --disable-selinux argument
 Configure miss: --with-compiledby argument
 Configure miss: --disable-xsmp argument
