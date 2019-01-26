@@ -44,6 +44,9 @@ Configure miss: sys/stream.h
 Configure miss: libc.h usability
 Configure miss: libc.h presence
 Configure miss: libc.h
+Configure miss: sys/ptms.h usability
+Configure miss: sys/ptms.h presence
+Configure miss: sys/ptms.h
 Configure miss: util/debug.h usability
 Configure miss: util/debug.h presence
 Configure miss: util/debug.h
