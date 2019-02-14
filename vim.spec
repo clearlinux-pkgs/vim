@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.0909
-Release  : 654
+Release  : 655
 URL      : https://github.com/vim/vim/archive/v8.1.0909.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.0909.tar.gz
 Summary  : Vi Improved, a highly configurable, improved version of the vi text editor
