@@ -1,6 +1,7 @@
 libacl.so.1
 libc.so.6
 libdl.so.2
+liblua.so.5.3
 libm.so.6
 libpthread.so.0
 libpython3.7m.so.1.0
