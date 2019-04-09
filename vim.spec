@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.1142
-Release  : 721
+Release  : 722
 URL      : https://github.com/vim/vim/archive/v8.1.1142/vim-8.1.1142.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.1142/vim-8.1.1142.tar.gz
 Summary  : Abstract VT220/Xterm/ECMA-48 emulation library
@@ -79,13 +79,22 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1554850585
+export SOURCE_DATE_EPOCH=1554852076
 export LDFLAGS="${LDFLAGS} -fno-lto"
-%configure --disable-static --with-features=huge  --with-tlib=ncurses  --enable-gtk2-check --enable-gui=gtk2 --enable-cscope --enable-multibyte --enable-luainterp --enable-pythoninterp --enable-cscope  --enable-python3interp
+%configure --disable-static --with-features=huge \
+--with-tlib=ncurses \
+--enable-gtk2-check \
+--enable-gui=gtk2 \
+--enable-cscope \
+--enable-multibyte \
+--enable-luainterp \
+--enable-pythoninterp \
+--enable-cscope \
+--enable-python3interp
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1554850585
+export SOURCE_DATE_EPOCH=1554852076
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/src_libvterm_LICENSE
