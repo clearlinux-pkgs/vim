@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.1187
-Release  : 740
+Release  : 741
 URL      : https://github.com/vim/vim/archive/v8.1.1187/vim-8.1.1187.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.1187/vim-8.1.1187.tar.gz
 Summary  : Vi Improved, a highly configurable, improved version of the vi text editor
