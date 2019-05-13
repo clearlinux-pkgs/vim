@@ -8,3 +8,4 @@
 --enable-pythoninterp
 --enable-cscope
 --enable-python3interp
+--enable-gpm
