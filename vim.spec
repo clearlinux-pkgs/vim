@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.1329
-Release  : 777
+Release  : 778
 URL      : https://github.com/vim/vim/archive/v8.1.1329/vim-8.1.1329.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.1329/vim-8.1.1329.tar.gz
 Summary  : Vi Improved, a highly configurable, improved version of the vi text editor
@@ -19,6 +19,7 @@ BuildRequires : attr-dev
 BuildRequires : buildreq-qmake
 BuildRequires : elfutils-dev
 BuildRequires : gmp-dev
+BuildRequires : gpm-dev
 BuildRequires : lua-dev
 BuildRequires : ncurses-dev
 BuildRequires : pkgconfig(sm)
@@ -81,7 +82,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1557754446
+export SOURCE_DATE_EPOCH=1557778037
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
@@ -102,7 +103,7 @@ export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1557754446
+export SOURCE_DATE_EPOCH=1557778037
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/src_libvterm_LICENSE
