@@ -67,6 +67,7 @@ Configure miss: getcwd implementation is broken
 Configure miss: getpseudotty
 Configure miss: sigsetjmp
 Configure miss: sigvec
+Configure miss: libcanberra
 Configure miss: whether stat() ignores a trailing slash
 Configure miss: --disable-acl argument
 Configure miss: acl_get_file in -lposix1e
