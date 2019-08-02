@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.1791
-Release  : 907
+Release  : 908
 URL      : https://github.com/vim/vim/archive/v8.1.1791/vim-8.1.1791.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.1791/vim-8.1.1791.tar.gz
 Summary  : Abstract VT220/Xterm/ECMA-48 emulation library
@@ -29,12 +29,11 @@ Patch1: stateless.patch
 Patch2: 0001-add-clearlinux-vimrc-file.patch
 
 %description
-This is a MODIFIED version of libvterm.
-The original can be found:
-- on the original site (tar archive and Bazaar repository):
-http://www.leonerd.org.uk/code/libvterm/
-- cloned on Github:
-https://github.com/neovim/libvterm
+Vim is a highly configurable text editor for efficiently creating and changing
+any kind of text. It is included as "vi" with most UNIX systems and with Apple
+OS X. Among its features are: persistent, multi-level undo tree; extensive
+plugin system; support for hundreds of programming languages and file formats;
+powerful search and replace; integrates with many tools.
 
 %package bin
 Summary: bin components for the vim package.
@@ -80,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1564775467
+export SOURCE_DATE_EPOCH=1564776189
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -103,7 +102,7 @@ export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1564775467
+export SOURCE_DATE_EPOCH=1564776189
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/src_libvterm_LICENSE
