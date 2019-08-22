@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.1909
-Release  : 929
+Release  : 930
 URL      : https://github.com/vim/vim/archive/v8.1.1909/vim-8.1.1909.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.1909/vim-8.1.1909.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -14,6 +14,7 @@ Requires: vim-bin = %{version}-%{release}
 Requires: vim-data = %{version}-%{release}
 Requires: vim-license = %{version}-%{release}
 Requires: vim-man = %{version}-%{release}
+Requires: usrbinvi
 BuildRequires : acl-dev
 BuildRequires : attr-dev
 BuildRequires : elfutils-dev
@@ -78,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1566431487
+export SOURCE_DATE_EPOCH=1566502856
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -101,7 +102,7 @@ export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1566431487
+export SOURCE_DATE_EPOCH=1566502856
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/src_libvterm_LICENSE
@@ -130,8 +131,7 @@ rm -f %{buildroot}/usr/share/vim/vim81/ftplugin/go.vim
 rm -f %{buildroot}/usr/share/vim/vim81/indent/go.vim
 rm -f %{buildroot}/usr/share/vim/vim81/syntax/go.vim
 ## install_append content
-ln -s vim %{buildroot}/usr/bin/vi
-install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
+install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 ## install_append end
 
 %files
@@ -142,7 +142,6 @@ install -p -D -m 644 vimrc %{buildroot}/usr/share/vim/
 /usr/bin/ex
 /usr/bin/rview
 /usr/bin/rvim
-/usr/bin/vi
 /usr/bin/view
 /usr/bin/vim
 /usr/bin/vimdiff
