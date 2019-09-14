@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.2022
-Release  : 936
+Release  : 937
 URL      : https://github.com/vim/vim/archive/v8.1.2022/vim-8.1.2022.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.2022/vim-8.1.2022.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
