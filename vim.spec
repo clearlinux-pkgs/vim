@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.2106
-Release  : 947
+Release  : 948
 URL      : https://github.com/vim/vim/archive/v8.1.2106/vim-8.1.2106.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.2106/vim-8.1.2106.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -80,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569945168
+export SOURCE_DATE_EPOCH=1569945689
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
@@ -104,7 +104,7 @@ export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1569945168
+export SOURCE_DATE_EPOCH=1569945689
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/src_libvterm_LICENSE
