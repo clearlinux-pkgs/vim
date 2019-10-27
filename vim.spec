@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.2225
-Release  : 984
+Release  : 985
 URL      : https://github.com/vim/vim/archive/v8.1.2225/vim-8.1.2225.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.2225/vim-8.1.2225.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -81,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1572184825
+export SOURCE_DATE_EPOCH=1572187392
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
@@ -105,7 +105,7 @@ export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1572184825
+export SOURCE_DATE_EPOCH=1572187392
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-8.1.2225/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6
@@ -133,6 +133,9 @@ rm -f %{buildroot}/usr/share/vim/vim81/compiler/go.vim
 rm -f %{buildroot}/usr/share/vim/vim81/ftplugin/go.vim
 rm -f %{buildroot}/usr/share/vim/vim81/indent/go.vim
 rm -f %{buildroot}/usr/share/vim/vim81/syntax/go.vim
+rm -f %{buildroot}/usr/share/vim/vim81/ftplugin/meson.vim
+rm -f %{buildroot}/usr/share/vim/vim81/indent/meson.vim
+rm -f %{buildroot}/usr/share/vim/vim81/syntax/meson.vim
 ## install_append content
 install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 ## install_append end
@@ -556,7 +559,6 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim81/ftplugin/manconf.vim
 /usr/share/vim/vim81/ftplugin/markdown.vim
 /usr/share/vim/vim81/ftplugin/matlab.vim
-/usr/share/vim/vim81/ftplugin/meson.vim
 /usr/share/vim/vim81/ftplugin/mf.vim
 /usr/share/vim/vim81/ftplugin/mma.vim
 /usr/share/vim/vim81/ftplugin/modconf.vim
@@ -725,7 +727,6 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim81/indent/mail.vim
 /usr/share/vim/vim81/indent/make.vim
 /usr/share/vim/vim81/indent/matlab.vim
-/usr/share/vim/vim81/indent/meson.vim
 /usr/share/vim/vim81/indent/mf.vim
 /usr/share/vim/vim81/indent/mma.vim
 /usr/share/vim/vim81/indent/mp.vim
@@ -1460,7 +1461,6 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim81/syntax/matlab.vim
 /usr/share/vim/vim81/syntax/maxima.vim
 /usr/share/vim/vim81/syntax/mel.vim
-/usr/share/vim/vim81/syntax/meson.vim
 /usr/share/vim/vim81/syntax/messages.vim
 /usr/share/vim/vim81/syntax/mf.vim
 /usr/share/vim/vim81/syntax/mgl.vim
