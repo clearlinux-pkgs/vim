@@ -1,0 +1,67 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Patrick McCarty <patrick.mccarty@intel.com>
+Date: Tue, 17 Feb 2015 11:30:33 -0800
+Subject: [PATCH] Add patch for stateless
+
+If present, the vimrc in /etc will override the one in /usr/share/vim.
+
+This patch does not add stateless gvimrc file support, but the changes
+would be very similar (see src/gui.c).
+
+Signed-off-by: Patrick McCarty <patrick.mccarty@intel.com>
+---
+ src/feature.h | 4 +++-
+ src/main.c    | 7 ++++++-
+ src/os_unix.h | 3 +++
+ 3 files changed, 12 insertions(+), 2 deletions(-)
+
+diff --git a/src/feature.h b/src/feature.h
+index 4c0758d..e24bf9d 100644
+--- a/src/feature.h
++++ b/src/feature.h
+@@ -824,8 +824,10 @@
+ 
+ /*
+  * SYS_VIMRC_FILE	Name of the system-wide .vimrc file.
++ * SYS_VIMRC_FILE2	Name of the .vimrc file to override SYS_VIMRC_FILE.
+  */
+-/* #define SYS_VIMRC_FILE	"/etc/vimrc" */
++/* #define SYS_VIMRC_FILE	"$VIM/vimrc" */
++/* #define SYS_VIMRC_FILE2	"/etc/vimrc" */
+ 
+ /*
+  * SYS_GVIMRC_FILE	Name of the system-wide .gvimrc file.
+diff --git a/src/main.c b/src/main.c
+index 2ec5c26..947cbe5 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -3202,9 +3202,14 @@ source_startup_scripts(mparm_T *parmp)
+ 	/*
+ 	 * Get system wide defaults, if the file name is defined.
+ 	 */
++#ifdef SYS_VIMRC_FILE2
++	if (do_source((char_u *)SYS_VIMRC_FILE2, FALSE, DOSO_NONE) == FAIL)
++#endif
++	{
+ #ifdef SYS_VIMRC_FILE
+-	(void)do_source((char_u *)SYS_VIMRC_FILE, FALSE, DOSO_NONE);
++	    (void)do_source((char_u *)SYS_VIMRC_FILE, FALSE, DOSO_NONE);
+ #endif
++	}
+ #ifdef MACOS_X
+ 	(void)do_source((char_u *)"$VIMRUNTIME/macmap.vim", FALSE, DOSO_NONE);
+ #endif
+diff --git a/src/os_unix.h b/src/os_unix.h
+index 618c0e9..8261d5e 100644
+--- a/src/os_unix.h
++++ b/src/os_unix.h
+@@ -216,6 +216,9 @@ typedef struct dsc$descriptor   DESC;
+ #ifndef SYS_VIMRC_FILE
+ # define SYS_VIMRC_FILE "$VIM/vimrc"
+ #endif
++#ifndef SYS_VIMRC_FILE2
++# define SYS_VIMRC_FILE2 "/etc/vimrc"
++#endif
+ #ifndef SYS_GVIMRC_FILE
+ # define SYS_GVIMRC_FILE "$VIM/gvimrc"
+ #endif

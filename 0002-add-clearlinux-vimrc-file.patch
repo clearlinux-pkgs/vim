@@ -1,8 +1,9 @@
-From b1f481c4f9d2831e89098f3244a16337e1be55cd Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Simental Magana, Marcos" <marcos.simental.magana@intel.com>
 Date: Tue, 23 Feb 2016 08:54:02 -0600
 Subject: [PATCH] add clearlinux vimrc file
 
+Signed-off-by: Patrick McCarty <patrick.mccarty@intel.com>
 ---
  runtime/defaults.vim |  2 +-
  vimrc                | 17 +++++++++++++++++
@@ -10,18 +11,18 @@ Subject: [PATCH] add clearlinux vimrc file
  create mode 100644 vimrc
 
 diff --git a/runtime/defaults.vim b/runtime/defaults.vim
-index 43ff1e0..2bf90f0 100644
+index e7929ea..b61b7d5 100644
 --- a/runtime/defaults.vim
 +++ b/runtime/defaults.vim
-@@ -67,7 +67,7 @@ inoremap <C-U> <C-G>u<C-U>
- " In many terminal emulators the mouse works just fine.  By enabling it you
- " can position the cursor, Visually select and scroll with the mouse.
+@@ -79,7 +79,7 @@ inoremap <C-U> <C-G>u<C-U>
+ " terminals use ":", select text and press Esc.
  if has('mouse')
--  set mouse=a
-+  set mouse=r
- endif
- 
- " Switch syntax highlighting on when the terminal has colors or when using the
+   if &term =~ 'xterm'
+-    set mouse=a
++    set mouse=r
+   else
+     set mouse=nvi
+   endif
 diff --git a/vimrc b/vimrc
 new file mode 100644
 index 0000000..de561ba
@@ -45,6 +46,3 @@ index 0000000..de561ba
 +" Don't wake up system with blinking cursor:
 +" " http://www.linuxpowertop.org/known.php
 +let &guicursor = &guicursor . ",a:blinkon0"
--- 
-2.10.2
-
