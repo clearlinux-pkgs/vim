@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.1.2323
-Release  : 1011
+Release  : 1012
 URL      : https://github.com/vim/vim/archive/v8.1.2323/vim-8.1.2323.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.1.2323/vim-8.1.2323.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
