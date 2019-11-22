@@ -31,7 +31,6 @@ Configure miss: --disable-channel argument
 Configure miss: --enable-autoservername argument
 Configure miss: --disable-rightleft argument
 Configure miss: --disable-arabic argument
-Configure miss: --enable-hangulinput argument
 Configure miss: --enable-fontset argument
 Configure miss: if X11 header files can be found
 Configure miss: --enable-gui argument
