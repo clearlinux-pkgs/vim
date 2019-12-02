@@ -25,9 +25,9 @@ index 4c0758d..e24bf9d 100644
   * SYS_VIMRC_FILE	Name of the system-wide .vimrc file.
 + * SYS_VIMRC_FILE2	Name of the .vimrc file to override SYS_VIMRC_FILE.
   */
--/* #define SYS_VIMRC_FILE	"/etc/vimrc" */
-+/* #define SYS_VIMRC_FILE	"$VIM/vimrc" */
-+/* #define SYS_VIMRC_FILE2	"/etc/vimrc" */
+-// #define SYS_VIMRC_FILE	"/etc/vimrc"
++// #define SYS_VIMRC_FILE	"$VIM/vimrc"
++// #define SYS_VIMRC_FILE2	"/etc/vimrc"
  
  /*
   * SYS_GVIMRC_FILE	Name of the system-wide .gvimrc file.
