@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.2.0014
-Release  : 1030
+Release  : 1031
 URL      : https://github.com/vim/vim/archive/v8.2.0014/vim-8.2.0014.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.2.0014/vim-8.2.0014.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -81,8 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1576549325
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1576633793
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -105,7 +104,7 @@ export CXXFLAGS="$CXXFLAGS -O3 -falign-functions=32 -ffat-lto-objects -flto=4 -f
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1576549325
+export SOURCE_DATE_EPOCH=1576633793
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-8.2.0014/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6
@@ -113,29 +112,28 @@ cp %{_builddir}/vim-8.2.0014/src/xdiff/COPYING %{buildroot}/usr/share/package-li
 cp %{_builddir}/vim-8.2.0014/src/xpm/COPYRIGHT %{buildroot}/usr/share/package-licenses/vim/553dde2683f711f77fe79504be0429256223469d
 %make_install
 ## Remove excluded files
-rm -f %{buildroot}/usr/share/vim/vim73/tools/vim132
-rm -f %{buildroot}/usr/share/vim/vim81/tools/vim132
-rm -f %{buildroot}/usr/share/vim/vim81/compiler/go.vim
-rm -f %{buildroot}/usr/share/vim/vim81/indent/go.vim
-rm -f %{buildroot}/usr/share/vim/vim81/syntax/go.vim
-rm -f %{buildroot}/usr/share/vim/vim81/ftplugin/go.vim
 rm -f %{buildroot}/usr/share/applications/gvim.desktop
 rm -f %{buildroot}/usr/share/applications/vim.desktop
 rm -f %{buildroot}/usr/share/icons/hicolor/48x48/apps/gvim.png
 rm -f %{buildroot}/usr/share/icons/locolor/16x16/apps/gvim.png
 rm -f %{buildroot}/usr/share/icons/locolor/32x32/apps/gvim.png
-rm -f %{buildroot}/usr/share/vim/vim81/autoload/go/def_test.vim
-rm -f %{buildroot}/usr/share/vim/vim81/autoload/go/fmt_test.vim
-rm -f %{buildroot}/usr/share/vim/vim81/autoload/go/test-fixtures/def/jump.go
-rm -f %{buildroot}/usr/share/vim/vim81/autoload/go/test-fixtures/fmt/hello.go
-rm -f %{buildroot}/usr/share/vim/vim81/autoload/go/test-fixtures/fmt/hello_golden.go
-rm -f %{buildroot}/usr/share/vim/vim81/compiler/go.vim
-rm -f %{buildroot}/usr/share/vim/vim81/ftplugin/go.vim
-rm -f %{buildroot}/usr/share/vim/vim81/indent/go.vim
-rm -f %{buildroot}/usr/share/vim/vim81/syntax/go.vim
-rm -f %{buildroot}/usr/share/vim/vim81/ftplugin/meson.vim
-rm -f %{buildroot}/usr/share/vim/vim81/indent/meson.vim
-rm -f %{buildroot}/usr/share/vim/vim81/syntax/meson.vim
+rm -f %{buildroot}/usr/share/vim/vim82/autoload/go/def_test.vim
+rm -f %{buildroot}/usr/share/vim/vim82/autoload/go/fmt_test.vim
+rm -f %{buildroot}/usr/share/vim/vim82/autoload/go/test-fixtures/def/jump.go
+rm -f %{buildroot}/usr/share/vim/vim82/autoload/go/test-fixtures/fmt/hello.go
+rm -f %{buildroot}/usr/share/vim/vim82/autoload/go/test-fixtures/fmt/hello_golden.go
+rm -f %{buildroot}/usr/share/vim/vim82/compiler/go.vim
+rm -f %{buildroot}/usr/share/vim/vim82/compiler/go.vim
+rm -f %{buildroot}/usr/share/vim/vim82/ftplugin/go.vim
+rm -f %{buildroot}/usr/share/vim/vim82/ftplugin/go.vim
+rm -f %{buildroot}/usr/share/vim/vim82/ftplugin/meson.vim
+rm -f %{buildroot}/usr/share/vim/vim82/indent/go.vim
+rm -f %{buildroot}/usr/share/vim/vim82/indent/go.vim
+rm -f %{buildroot}/usr/share/vim/vim82/indent/meson.vim
+rm -f %{buildroot}/usr/share/vim/vim82/syntax/go.vim
+rm -f %{buildroot}/usr/share/vim/vim82/syntax/go.vim
+rm -f %{buildroot}/usr/share/vim/vim82/syntax/meson.vim
+rm -f %{buildroot}/usr/share/vim/vim82/tools/vim132
 ## install_append content
 install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 ## install_append end
@@ -252,7 +250,6 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim82/compiler/gfortran.vim
 /usr/share/vim/vim82/compiler/ghc.vim
 /usr/share/vim/vim82/compiler/gnat.vim
-/usr/share/vim/vim82/compiler/go.vim
 /usr/share/vim/vim82/compiler/haml.vim
 /usr/share/vim/vim82/compiler/hp_acc.vim
 /usr/share/vim/vim82/compiler/icc.vim
@@ -510,7 +507,6 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim82/ftplugin/gitconfig.vim
 /usr/share/vim/vim82/ftplugin/gitrebase.vim
 /usr/share/vim/vim82/ftplugin/gitsendemail.vim
-/usr/share/vim/vim82/ftplugin/go.vim
 /usr/share/vim/vim82/ftplugin/gpg.vim
 /usr/share/vim/vim82/ftplugin/gprof.vim
 /usr/share/vim/vim82/ftplugin/groovy.vim
@@ -561,7 +557,6 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim82/ftplugin/manconf.vim
 /usr/share/vim/vim82/ftplugin/markdown.vim
 /usr/share/vim/vim82/ftplugin/matlab.vim
-/usr/share/vim/vim82/ftplugin/meson.vim
 /usr/share/vim/vim82/ftplugin/mf.vim
 /usr/share/vim/vim82/ftplugin/mma.vim
 /usr/share/vim/vim82/ftplugin/modconf.vim
@@ -707,7 +702,6 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim82/indent/framescript.vim
 /usr/share/vim/vim82/indent/gitconfig.vim
 /usr/share/vim/vim82/indent/gitolite.vim
-/usr/share/vim/vim82/indent/go.vim
 /usr/share/vim/vim82/indent/haml.vim
 /usr/share/vim/vim82/indent/hamster.vim
 /usr/share/vim/vim82/indent/hog.vim
@@ -731,7 +725,6 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim82/indent/mail.vim
 /usr/share/vim/vim82/indent/make.vim
 /usr/share/vim/vim82/indent/matlab.vim
-/usr/share/vim/vim82/indent/meson.vim
 /usr/share/vim/vim82/indent/mf.vim
 /usr/share/vim/vim82/indent/mma.vim
 /usr/share/vim/vim82/indent/mp.vim
@@ -1356,7 +1349,6 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim82/syntax/gkrellmrc.vim
 /usr/share/vim/vim82/syntax/gnash.vim
 /usr/share/vim/vim82/syntax/gnuplot.vim
-/usr/share/vim/vim82/syntax/go.vim
 /usr/share/vim/vim82/syntax/godoc.vim
 /usr/share/vim/vim82/syntax/gp.vim
 /usr/share/vim/vim82/syntax/gpg.vim
@@ -1469,7 +1461,6 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim82/syntax/matlab.vim
 /usr/share/vim/vim82/syntax/maxima.vim
 /usr/share/vim/vim82/syntax/mel.vim
-/usr/share/vim/vim82/syntax/meson.vim
 /usr/share/vim/vim82/syntax/messages.vim
 /usr/share/vim/vim82/syntax/mf.vim
 /usr/share/vim/vim82/syntax/mgl.vim
@@ -1789,7 +1780,6 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim82/tools/shtags.1
 /usr/share/vim/vim82/tools/shtags.pl
 /usr/share/vim/vim82/tools/unicode.vim
-/usr/share/vim/vim82/tools/vim132
 /usr/share/vim/vim82/tools/vim_vs_net.cmd
 /usr/share/vim/vim82/tools/vimm
 /usr/share/vim/vim82/tools/vimspell.sh
