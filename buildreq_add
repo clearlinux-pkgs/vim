@@ -2,8 +2,11 @@
 # This file contains extra pkgconfig build requirements that don't get picked up but are 
 # desirable. One name per line, no whitespace.
 #
-ncurses-dev
-lua-dev
+acl-dev
+attr-dev
+elfutils-dev
 gmp-dev
+gpm-dev
+lua-dev
+ncurses-dev
 python3-dev
-

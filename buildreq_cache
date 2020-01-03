@@ -1,7 +1,0 @@
-8.2.0034
-acl-dev
-attr-dev
-elfutils-dev
-gpm-dev
-pkgconfig(sm)
-pkgconfig(x11)
