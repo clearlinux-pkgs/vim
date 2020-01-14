@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.2.0116
-Release  : 1048
+Release  : 1049
 URL      : https://github.com/vim/vim/archive/v8.2.0116/vim-8.2.0116.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.2.0116/vim-8.2.0116.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -20,12 +20,8 @@ BuildRequires : attr-dev
 BuildRequires : elfutils-dev
 BuildRequires : gmp-dev
 BuildRequires : gpm-dev
-BuildRequires : libXpm-dev
 BuildRequires : lua-dev
 BuildRequires : ncurses-dev
-BuildRequires : pkgconfig(sm)
-BuildRequires : pkgconfig(x11)
-BuildRequires : pkgconfig(xpm)
 BuildRequires : python3-dev
 BuildRequires : usrbinvi
 Patch1: 0001-Add-patch-for-stateless.patch
@@ -83,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578963664
+export SOURCE_DATE_EPOCH=1579025126
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
@@ -107,7 +103,7 @@ export CXXFLAGS="$CXXFLAGS -O3 -falign-functions=32 -ffat-lto-objects -flto=4 -f
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1578963664
+export SOURCE_DATE_EPOCH=1579025126
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-8.2.0116/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6
