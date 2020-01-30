@@ -19,7 +19,7 @@ diff --git a/src/feature.h b/src/feature.h
 index 4c0758d..e24bf9d 100644
 --- a/src/feature.h
 +++ b/src/feature.h
-@@ -824,8 +824,10 @@
+@@ -813,8 +813,10 @@
  
  /*
   * SYS_VIMRC_FILE	Name of the system-wide .vimrc file.
@@ -35,22 +35,22 @@ diff --git a/src/main.c b/src/main.c
 index 2ec5c26..947cbe5 100644
 --- a/src/main.c
 +++ b/src/main.c
-@@ -3202,9 +3202,14 @@ source_startup_scripts(mparm_T *parmp)
+@@ -3208,9 +3208,14 @@ source_startup_scripts(mparm_T *parmp)
  	/*
  	 * Get system wide defaults, if the file name is defined.
  	 */
 +#ifdef SYS_VIMRC_FILE2
-+	if (do_source((char_u *)SYS_VIMRC_FILE2, FALSE, DOSO_NONE) == FAIL)
++	if (do_source((char_u *)SYS_VIMRC_FILE2, FALSE, DOSO_NONE, NULL) == FAIL)
 +#endif
 +	{
  #ifdef SYS_VIMRC_FILE
--	(void)do_source((char_u *)SYS_VIMRC_FILE, FALSE, DOSO_NONE);
-+	    (void)do_source((char_u *)SYS_VIMRC_FILE, FALSE, DOSO_NONE);
+-	(void)do_source((char_u *)SYS_VIMRC_FILE, FALSE, DOSO_NONE, NULL);
++	    (void)do_source((char_u *)SYS_VIMRC_FILE, FALSE, DOSO_NONE, NULL);
  #endif
 +	}
  #ifdef MACOS_X
- 	(void)do_source((char_u *)"$VIMRUNTIME/macmap.vim", FALSE, DOSO_NONE);
- #endif
+ 	(void)do_source((char_u *)"$VIMRUNTIME/macmap.vim", FALSE,
+ 							      DOSO_NONE, NULL);
 diff --git a/src/os_unix.h b/src/os_unix.h
 index 618c0e9..8261d5e 100644
 --- a/src/os_unix.h
