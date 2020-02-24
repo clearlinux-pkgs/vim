@@ -1,1 +1,3 @@
 install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
+
+install ./vim-minimal %{buildroot}/usr/bin/

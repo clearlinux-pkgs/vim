@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.2.0313
-Release  : 1088
+Release  : 1091
 URL      : https://github.com/vim/vim/archive/v8.2.0313/vim-8.2.0313.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.2.0313/vim-8.2.0313.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -52,6 +52,14 @@ Group: Data
 data components for the vim package.
 
 
+%package extras-minimal
+Summary: extras-minimal components for the vim package.
+Group: Default
+
+%description extras-minimal
+extras-minimal components for the vim package.
+
+
 %package license
 Summary: license components for the vim package.
 Group: Default
@@ -75,11 +83,20 @@ cd %{_builddir}/vim-8.2.0313
 %patch2 -p1
 
 %build
+## build_prepend content
+# build vim-minimal
+%configure --with-features=tiny --enable-perlinterp=no --enable-pythoninterp=no \
+--enable-python3interp=no --enable-rubyinterp=no --enable-luainterp=no \
+--with-vim-name=vim-minimal --enable-gui=no
+make -C src %{?_smp_mflags}
+mv src/vim-minimal ./
+make distclean
+## build_prepend end
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582516335
+export SOURCE_DATE_EPOCH=1582573240
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -102,7 +119,7 @@ export CXXFLAGS="$CXXFLAGS -O3 -falign-functions=32 -ffat-lto-objects -flto=4 -f
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1582516335
+export SOURCE_DATE_EPOCH=1582573240
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-8.2.0313/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518
@@ -135,6 +152,8 @@ rm -f %{buildroot}/usr/share/vim/vim*/syntax/meson.vim
 rm -f %{buildroot}/usr/share/vim/vim*/tools/vim132
 ## install_append content
 install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
+
+install ./vim-minimal %{buildroot}/usr/bin/
 ## install_append end
 
 %files
@@ -1865,6 +1884,10 @@ install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 /usr/share/vim/vim82/tutor/tutor.zh_tw.utf-8
 /usr/share/vim/vim82/vimrc_example.vim
 /usr/share/vim/vimrc
+
+%files extras-minimal
+%defattr(-,root,root,-)
+/usr/bin/vim-minimal
 
 %files license
 %defattr(0644,root,root,0755)

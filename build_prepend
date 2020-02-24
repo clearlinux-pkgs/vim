@@ -1,0 +1,7 @@
+# build vim-minimal
+%configure --with-features=tiny --enable-perlinterp=no --enable-pythoninterp=no \
+	--enable-python3interp=no --enable-rubyinterp=no --enable-luainterp=no \
+	--with-vim-name=vim-minimal --enable-gui=no
+make -C src %{?_smp_mflags}
+mv src/vim-minimal ./
+make distclean
