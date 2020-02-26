@@ -1,5 +1,6 @@
 Configure miss: --enable-fail-if-missing argument
 Configure miss: BeOS
+Configure miss: Haiku
 Configure miss: QNX
 Configure miss: Darwin (Mac OS X)
 Configure miss: AvailabilityMacros.h usability
@@ -85,6 +86,7 @@ Configure miss: dlopen()
 Configure miss: whether we need to force -D_FILE_OFFSET_BITS=64
 Configure miss: --enable-fail-if-missing argument
 Configure miss: BeOS
+Configure miss: Haiku
 Configure miss: QNX
 Configure miss: Darwin (Mac OS X)
 Configure miss: AvailabilityMacros.h usability
