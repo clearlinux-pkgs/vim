@@ -1,4 +1,5 @@
 # This file contains recursive sources that require this package
+gvim
 jedi-vim
 kim-api
 patchutils
