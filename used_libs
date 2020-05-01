@@ -4,6 +4,5 @@ libdl.so.2
 libgpm.so.2
 liblua.so.5.3
 libm.so.6
-libpthread.so.0
 libpython3.8.so.1.0
 libtinfo.so.6
