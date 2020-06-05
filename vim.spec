@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.2.0905
-Release  : 1211
+Release  : 1212
 URL      : https://github.com/vim/vim/archive/v8.2.0905/vim-8.2.0905.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.2.0905/vim-8.2.0905.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
