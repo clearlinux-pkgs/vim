@@ -20,3 +20,4 @@
 /usr/share/vim/vim*/syntax/go.vim
 /usr/share/vim/vim*/syntax/meson.vim
 /usr/share/vim/vim*/tools/vim132
+/usr/share/vim/vim82/ftplugin/asm.vim

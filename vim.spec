@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.2.0931
-Release  : 1217
+Release  : 1218
 URL      : https://github.com/vim/vim/archive/v8.2.0931/vim-8.2.0931.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.2.0931/vim-8.2.0931.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -96,7 +96,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1591631991
+export SOURCE_DATE_EPOCH=1591636092
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -119,7 +119,7 @@ export CXXFLAGS="$CXXFLAGS -O3 -falign-functions=32 -ffat-lto-objects -flto=4 -f
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1591631991
+export SOURCE_DATE_EPOCH=1591636092
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-8.2.0931/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518
@@ -150,6 +150,7 @@ rm -f %{buildroot}/usr/share/vim/vim*/syntax/go.vim
 rm -f %{buildroot}/usr/share/vim/vim*/syntax/go.vim
 rm -f %{buildroot}/usr/share/vim/vim*/syntax/meson.vim
 rm -f %{buildroot}/usr/share/vim/vim*/tools/vim132
+rm -f %{buildroot}/usr/share/vim/vim82/ftplugin/asm.vim
 ## install_append content
 install -p -D -m 0644 vimrc %{buildroot}/usr/share/vim/
 
@@ -469,7 +470,6 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim82/ftplugin/ant.vim
 /usr/share/vim/vim82/ftplugin/arch.vim
 /usr/share/vim/vim82/ftplugin/art.vim
-/usr/share/vim/vim82/ftplugin/asm.vim
 /usr/share/vim/vim82/ftplugin/aspvbs.vim
 /usr/share/vim/vim82/ftplugin/automake.vim
 /usr/share/vim/vim82/ftplugin/awk.vim
