@@ -1,23 +1,26 @@
+# shipped with gvim:
 /usr/share/applications/gvim.desktop
 /usr/share/applications/vim.desktop
 /usr/share/icons/hicolor/48x48/apps/gvim.png
 /usr/share/icons/locolor/16x16/apps/gvim.png
 /usr/share/icons/locolor/32x32/apps/gvim.png
+
+# shipped with vim-go:
 /usr/share/vim/vim*/autoload/go/def_test.vim
 /usr/share/vim/vim*/autoload/go/fmt_test.vim
 /usr/share/vim/vim*/autoload/go/test-fixtures/def/jump.go
 /usr/share/vim/vim*/autoload/go/test-fixtures/fmt/hello.go
 /usr/share/vim/vim*/autoload/go/test-fixtures/fmt/hello_golden.go
 /usr/share/vim/vim*/compiler/go.vim
-/usr/share/vim/vim*/compiler/go.vim
+/usr/share/vim/vim*/ftplugin/asm.vim
 /usr/share/vim/vim*/ftplugin/go.vim
-/usr/share/vim/vim*/ftplugin/go.vim
+/usr/share/vim/vim*/indent/go.vim
+/usr/share/vim/vim*/syntax/go.vim
+
+# part of meson (though manually installed):
 /usr/share/vim/vim*/ftplugin/meson.vim
-/usr/share/vim/vim*/indent/go.vim
-/usr/share/vim/vim*/indent/go.vim
 /usr/share/vim/vim*/indent/meson.vim
-/usr/share/vim/vim*/syntax/go.vim
-/usr/share/vim/vim*/syntax/go.vim
 /usr/share/vim/vim*/syntax/meson.vim
+
+# first excluded in 2014... not sure why
 /usr/share/vim/vim*/tools/vim132
-/usr/share/vim/vim82/ftplugin/asm.vim
