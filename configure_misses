@@ -79,6 +79,7 @@ Configure miss: --disable-gpm argument
 Configure miss: --disable-sysmouse argument
 Configure miss: sysmouse
 Configure miss: sysctl
+Configure miss: _SC_SIGSTKSZ via sysconf()
 Configure miss: _xpg4_setrunelocale in -lxpg4
 Configure miss: --disable-nls argument
 Configure miss: dlopen()
@@ -169,6 +170,7 @@ Configure miss: --disable-gpm argument
 Configure miss: --disable-sysmouse argument
 Configure miss: sysmouse
 Configure miss: sysctl
+Configure miss: _SC_SIGSTKSZ via sysconf()
 Configure miss: _xpg4_setrunelocale in -lxpg4
 Configure miss: --disable-nls argument
 Configure miss: dlopen()
