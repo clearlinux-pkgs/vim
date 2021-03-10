@@ -2,7 +2,7 @@ libacl.so.1
 libc.so.6
 libdl.so.2
 libgpm.so.2
-liblua.so.5.3
+liblua.so.5.4
 libm.so.6
 libpthread.so.0
 libtinfo.so.6
