@@ -149,6 +149,8 @@ Configure miss: sys/stream.h presence
 Configure miss: sys/stream.h presence
 Configure miss: sys/stream.h usability
 Configure miss: sys/stream.h usability
+Configure miss: sys/sysctl.h
+Configure miss: sys/sysctl.h
 Configure miss: sysctl
 Configure miss: sysctl
 Configure miss: sysmouse
