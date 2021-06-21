@@ -116,6 +116,7 @@ Configure miss: libc.h presence
 Configure miss: libc.h usability
 Configure miss: libc.h usability
 Configure miss: libcanberra
+Configure miss: libcanberra
 Configure miss: pthread_np.h
 Configure miss: pthread_np.h
 Configure miss: python2
