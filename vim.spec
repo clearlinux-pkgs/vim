@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.2.3437
-Release  : 1699
+Release  : 1700
 URL      : https://github.com/vim/vim/archive/v8.2.3437/vim-8.2.3437.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.2.3437/vim-8.2.3437.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
