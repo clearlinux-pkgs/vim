@@ -1,175 +1,350 @@
 Configure miss: --disable-acl argument
 Configure miss: --disable-acl argument
+Configure miss: --disable-acl argument
+Configure miss: --disable-acl argument
+Configure miss: --disable-arabic argument
+Configure miss: --disable-arabic argument
 Configure miss: --disable-arabic argument
 Configure miss: --disable-arabic argument
 Configure miss: --disable-channel argument
+Configure miss: --disable-channel argument
+Configure miss: --disable-gpm argument
+Configure miss: --disable-gpm argument
 Configure miss: --disable-gpm argument
 Configure miss: --disable-gpm argument
 Configure miss: --disable-netbeans argument
+Configure miss: --disable-netbeans argument
+Configure miss: --disable-nls argument
+Configure miss: --disable-nls argument
 Configure miss: --disable-nls argument
 Configure miss: --disable-nls argument
 Configure miss: --disable-rightleft argument
 Configure miss: --disable-rightleft argument
+Configure miss: --disable-rightleft argument
+Configure miss: --disable-rightleft argument
+Configure miss: --disable-selinux argument
+Configure miss: --disable-selinux argument
 Configure miss: --disable-selinux argument
 Configure miss: --disable-selinux argument
 Configure miss: --disable-smack argument
 Configure miss: --disable-smack argument
+Configure miss: --disable-smack argument
+Configure miss: --disable-smack argument
+Configure miss: --disable-sysmouse argument
+Configure miss: --disable-sysmouse argument
 Configure miss: --disable-sysmouse argument
 Configure miss: --disable-sysmouse argument
 Configure miss: --disable-xsmp argument
 Configure miss: --disable-xsmp argument
+Configure miss: --disable-xsmp argument
+Configure miss: --disable-xsmp argument
 Configure miss: --disable-xsmp-interact argument
 Configure miss: --disable-xsmp-interact argument
+Configure miss: --disable-xsmp-interact argument
+Configure miss: --disable-xsmp-interact argument
+Configure miss: --enable-autoservername argument
+Configure miss: --enable-autoservername argument
 Configure miss: --enable-autoservername argument
 Configure miss: --enable-autoservername argument
 Configure miss: --enable-cscope argument
+Configure miss: --enable-cscope argument
+Configure miss: --enable-fail-if-missing argument
+Configure miss: --enable-fail-if-missing argument
 Configure miss: --enable-fail-if-missing argument
 Configure miss: --enable-fail-if-missing argument
 Configure miss: --enable-fontset argument
 Configure miss: --enable-fontset argument
+Configure miss: --enable-fontset argument
+Configure miss: --enable-fontset argument
+Configure miss: --enable-gui argument
+Configure miss: --enable-gui argument
 Configure miss: --enable-gui argument
 Configure miss: --enable-gui argument
 Configure miss: --enable-luainterp argument
+Configure miss: --enable-luainterp argument
 Configure miss: --enable-mzschemeinterp argument
 Configure miss: --enable-mzschemeinterp argument
+Configure miss: --enable-mzschemeinterp argument
+Configure miss: --enable-mzschemeinterp argument
+Configure miss: --enable-perlinterp argument
+Configure miss: --enable-perlinterp argument
 Configure miss: --enable-perlinterp argument
 Configure miss: --enable-perlinterp argument
 Configure miss: --enable-python3interp argument
+Configure miss: --enable-python3interp argument
+Configure miss: --enable-pythoninterp argument
 Configure miss: --enable-pythoninterp argument
 Configure miss: --enable-rubyinterp argument
 Configure miss: --enable-rubyinterp argument
+Configure miss: --enable-rubyinterp argument
+Configure miss: --enable-rubyinterp argument
+Configure miss: --enable-tclinterp argument
+Configure miss: --enable-tclinterp argument
 Configure miss: --enable-tclinterp argument
 Configure miss: --enable-tclinterp argument
 Configure miss: --with-compiledby argument
 Configure miss: --with-compiledby argument
+Configure miss: --with-compiledby argument
+Configure miss: --with-compiledby argument
+Configure miss: --with-global-runtime argument
+Configure miss: --with-global-runtime argument
 Configure miss: --with-global-runtime argument
 Configure miss: --with-global-runtime argument
 Configure miss: --with-lua-prefix argument
+Configure miss: --with-lua-prefix argument
+Configure miss: --with-luajit
 Configure miss: --with-luajit
 Configure miss: --with-modified-by argument
 Configure miss: --with-modified-by argument
+Configure miss: --with-modified-by argument
+Configure miss: --with-modified-by argument
 Configure miss: --with-python-command argument
+Configure miss: --with-python-command argument
+Configure miss: --with-python3-command argument
 Configure miss: --with-python3-command argument
 Configure miss: /dev/ptc
 Configure miss: /dev/ptc
+Configure miss: /dev/ptc
+Configure miss: /dev/ptc
+Configure miss: AIX ACL support
+Configure miss: AIX ACL support
 Configure miss: AIX ACL support
 Configure miss: AIX ACL support
 Configure miss: AvailabilityMacros.h
 Configure miss: AvailabilityMacros.h
+Configure miss: AvailabilityMacros.h
+Configure miss: AvailabilityMacros.h
+Configure miss: AvailabilityMacros.h presence
+Configure miss: AvailabilityMacros.h presence
 Configure miss: AvailabilityMacros.h presence
 Configure miss: AvailabilityMacros.h presence
 Configure miss: AvailabilityMacros.h usability
 Configure miss: AvailabilityMacros.h usability
+Configure miss: AvailabilityMacros.h usability
+Configure miss: AvailabilityMacros.h usability
+Configure miss: CYGWIN or MSYS environment
+Configure miss: CYGWIN or MSYS environment
 Configure miss: CYGWIN or MSYS environment
 Configure miss: CYGWIN or MSYS environment
 Configure miss: Darwin (Mac OS X)
 Configure miss: Darwin (Mac OS X)
+Configure miss: Darwin (Mac OS X)
+Configure miss: Darwin (Mac OS X)
+Configure miss: Haiku
+Configure miss: Haiku
 Configure miss: Haiku
 Configure miss: Haiku
 Configure miss: LUA_PREFIX environment var
+Configure miss: LUA_PREFIX environment var
+Configure miss: QNX
+Configure miss: QNX
 Configure miss: QNX
 Configure miss: QNX
 Configure miss: Solaris ACL support
 Configure miss: Solaris ACL support
+Configure miss: Solaris ACL support
+Configure miss: Solaris ACL support
+Configure miss: X
+Configure miss: X
 Configure miss: X
 Configure miss: X
 Configure miss: X11/SM/SMlib.h
 Configure miss: X11/SM/SMlib.h
+Configure miss: X11/SM/SMlib.h
+Configure miss: X11/SM/SMlib.h
+Configure miss: X11/SM/SMlib.h presence
+Configure miss: X11/SM/SMlib.h presence
 Configure miss: X11/SM/SMlib.h presence
 Configure miss: X11/SM/SMlib.h presence
 Configure miss: X11/SM/SMlib.h usability
 Configure miss: X11/SM/SMlib.h usability
+Configure miss: X11/SM/SMlib.h usability
+Configure miss: X11/SM/SMlib.h usability
+Configure miss: _xpg4_setrunelocale in -lxpg4
+Configure miss: _xpg4_setrunelocale in -lxpg4
 Configure miss: _xpg4_setrunelocale in -lxpg4
 Configure miss: _xpg4_setrunelocale in -lxpg4
 Configure miss: acl_get in -lsec
 Configure miss: acl_get in -lsec
+Configure miss: acl_get in -lsec
+Configure miss: acl_get in -lsec
+Configure miss: acl_get_file in -lposix1e
+Configure miss: acl_get_file in -lposix1e
 Configure miss: acl_get_file in -lposix1e
 Configure miss: acl_get_file in -lposix1e
 Configure miss: attr/xattr.h
 Configure miss: attr/xattr.h
+Configure miss: attr/xattr.h
+Configure miss: attr/xattr.h
+Configure miss: attr/xattr.h presence
+Configure miss: attr/xattr.h presence
 Configure miss: attr/xattr.h presence
 Configure miss: attr/xattr.h presence
 Configure miss: attr/xattr.h usability
 Configure miss: attr/xattr.h usability
+Configure miss: attr/xattr.h usability
+Configure miss: attr/xattr.h usability
+Configure miss: frame.h
+Configure miss: frame.h
 Configure miss: frame.h
 Configure miss: frame.h
 Configure miss: frame.h presence
 Configure miss: frame.h presence
+Configure miss: frame.h presence
+Configure miss: frame.h presence
+Configure miss: frame.h usability
+Configure miss: frame.h usability
 Configure miss: frame.h usability
 Configure miss: frame.h usability
 Configure miss: getcwd implementation is broken
 Configure miss: getcwd implementation is broken
+Configure miss: getcwd implementation is broken
+Configure miss: getcwd implementation is broken
+Configure miss: getpseudotty
+Configure miss: getpseudotty
 Configure miss: getpseudotty
 Configure miss: getpseudotty
 Configure miss: if X11 header files can be found
 Configure miss: if X11 header files can be found
+Configure miss: if X11 header files can be found
+Configure miss: if X11 header files can be found
+Configure miss: if character set is EBCDIC
+Configure miss: if character set is EBCDIC
 Configure miss: if character set is EBCDIC
 Configure miss: if character set is EBCDIC
 Configure miss: libc.h
 Configure miss: libc.h
+Configure miss: libc.h
+Configure miss: libc.h
 Configure miss: libc.h presence
 Configure miss: libc.h presence
+Configure miss: libc.h presence
+Configure miss: libc.h presence
+Configure miss: libc.h usability
+Configure miss: libc.h usability
 Configure miss: libc.h usability
 Configure miss: libc.h usability
 Configure miss: libsodium
+Configure miss: libsodium
+Configure miss: pthread_np.h
+Configure miss: pthread_np.h
 Configure miss: pthread_np.h
 Configure miss: pthread_np.h
 Configure miss: python2
+Configure miss: python2
+Configure miss: sigsetjmp
+Configure miss: sigsetjmp
 Configure miss: sigsetjmp
 Configure miss: sigsetjmp
 Configure miss: sigvec
 Configure miss: sigvec
+Configure miss: sigvec
+Configure miss: sigvec
+Configure miss: stropts.h
+Configure miss: stropts.h
 Configure miss: stropts.h
 Configure miss: stropts.h
 Configure miss: stropts.h presence
 Configure miss: stropts.h presence
+Configure miss: stropts.h presence
+Configure miss: stropts.h presence
+Configure miss: stropts.h usability
+Configure miss: stropts.h usability
 Configure miss: stropts.h usability
 Configure miss: stropts.h usability
 Configure miss: sys/access.h
 Configure miss: sys/access.h
+Configure miss: sys/access.h
+Configure miss: sys/access.h
+Configure miss: sys/access.h presence
+Configure miss: sys/access.h presence
 Configure miss: sys/access.h presence
 Configure miss: sys/access.h presence
 Configure miss: sys/access.h usability
 Configure miss: sys/access.h usability
+Configure miss: sys/access.h usability
+Configure miss: sys/access.h usability
+Configure miss: sys/ptem.h
+Configure miss: sys/ptem.h
 Configure miss: sys/ptem.h
 Configure miss: sys/ptem.h
 Configure miss: sys/ptms.h
 Configure miss: sys/ptms.h
+Configure miss: sys/ptms.h
+Configure miss: sys/ptms.h
+Configure miss: sys/ptms.h presence
+Configure miss: sys/ptms.h presence
 Configure miss: sys/ptms.h presence
 Configure miss: sys/ptms.h presence
 Configure miss: sys/ptms.h usability
 Configure miss: sys/ptms.h usability
+Configure miss: sys/ptms.h usability
+Configure miss: sys/ptms.h usability
+Configure miss: sys/stream.h
+Configure miss: sys/stream.h
 Configure miss: sys/stream.h
 Configure miss: sys/stream.h
 Configure miss: sys/stream.h presence
 Configure miss: sys/stream.h presence
+Configure miss: sys/stream.h presence
+Configure miss: sys/stream.h presence
+Configure miss: sys/stream.h usability
+Configure miss: sys/stream.h usability
 Configure miss: sys/stream.h usability
 Configure miss: sys/stream.h usability
 Configure miss: sys/sysctl.h
 Configure miss: sys/sysctl.h
+Configure miss: sys/sysctl.h
+Configure miss: sys/sysctl.h
+Configure miss: sysctl
+Configure miss: sysctl
 Configure miss: sysctl
 Configure miss: sysctl
 Configure miss: sysmouse
 Configure miss: sysmouse
+Configure miss: sysmouse
+Configure miss: sysmouse
+Configure miss: util/debug.h
+Configure miss: util/debug.h
 Configure miss: util/debug.h
 Configure miss: util/debug.h
 Configure miss: util/debug.h presence
 Configure miss: util/debug.h presence
+Configure miss: util/debug.h presence
+Configure miss: util/debug.h presence
+Configure miss: util/debug.h usability
+Configure miss: util/debug.h usability
 Configure miss: util/debug.h usability
 Configure miss: util/debug.h usability
 Configure miss: util/msg18n.h
 Configure miss: util/msg18n.h
+Configure miss: util/msg18n.h
+Configure miss: util/msg18n.h
+Configure miss: util/msg18n.h presence
+Configure miss: util/msg18n.h presence
 Configure miss: util/msg18n.h presence
 Configure miss: util/msg18n.h presence
 Configure miss: util/msg18n.h usability
 Configure miss: util/msg18n.h usability
+Configure miss: util/msg18n.h usability
+Configure miss: util/msg18n.h usability
+Configure miss: whether stack_t has an ss_base field
+Configure miss: whether stack_t has an ss_base field
 Configure miss: whether stack_t has an ss_base field
 Configure miss: whether stack_t has an ss_base field
 Configure miss: whether stat() ignores a trailing slash
 Configure miss: whether stat() ignores a trailing slash
+Configure miss: whether stat() ignores a trailing slash
+Configure miss: whether stat() ignores a trailing slash
+Configure miss: whether toupper is broken
+Configure miss: whether toupper is broken
 Configure miss: whether toupper is broken
 Configure miss: whether toupper is broken
 Configure miss: whether tputs() uses outfuntype
 Configure miss: whether tputs() uses outfuntype
+Configure miss: whether tputs() uses outfuntype
+Configure miss: whether tputs() uses outfuntype
+Configure miss: whether we need to force -D_FILE_OFFSET_BITS=64
+Configure miss: whether we need to force -D_FILE_OFFSET_BITS=64
 Configure miss: whether we need to force -D_FILE_OFFSET_BITS=64
 Configure miss: whether we need to force -D_FILE_OFFSET_BITS=64
