@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.2.3605
-Release  : 1775
+Release  : 1776
 URL      : https://github.com/vim/vim/archive/v8.2.3605/vim-8.2.3605.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.2.3605/vim-8.2.3605.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
