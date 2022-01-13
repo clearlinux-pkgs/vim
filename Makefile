@@ -1,5 +1,5 @@
 PKG_NAME := vim
-URL = https://github.com/vim/vim/archive/v8.2.4076/vim-8.2.4076.tar.gz
+URL = https://github.com/vim/vim/archive/v8.2.4077/vim-8.2.4077.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
