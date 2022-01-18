@@ -224,6 +224,8 @@ Configure miss: libc.h usability
 Configure miss: libc.h usability
 Configure miss: libc.h usability
 Configure miss: libc.h usability
+Configure miss: libcanberra
+Configure miss: libcanberra
 Configure miss: libsodium
 Configure miss: libsodium
 Configure miss: pthread_np.h
