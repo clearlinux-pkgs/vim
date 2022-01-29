@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.2.4256
-Release  : 2149
+Release  : 2150
 URL      : https://github.com/vim/vim/archive/v8.2.4256/vim-8.2.4256.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.2.4256/vim-8.2.4256.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
