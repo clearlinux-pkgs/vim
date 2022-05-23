@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.2.5009
-Release  : 2528
+Release  : 2529
 URL      : https://github.com/vim/vim/archive/v8.2.5009/vim-8.2.5009.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.2.5009/vim-8.2.5009.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
