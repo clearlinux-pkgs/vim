@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 8.2.5168
-Release  : 2630
+Release  : 2631
 URL      : https://github.com/vim/vim/archive/v8.2.5168/vim-8.2.5168.tar.gz
 Source0  : https://github.com/vim/vim/archive/v8.2.5168/vim-8.2.5168.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -108,7 +108,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656337580
+export SOURCE_DATE_EPOCH=1656355270
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -160,7 +160,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make  %{?_smp_mflags}
 popd
 %install
-export SOURCE_DATE_EPOCH=1656337580
+export SOURCE_DATE_EPOCH=1656355270
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-8.2.5168/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518
