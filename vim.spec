@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 9.0.0173
-Release  : 2734
+Release  : 2735
 URL      : https://github.com/vim/vim/archive/v9.0.0173/vim-9.0.0173.tar.gz
 Source0  : https://github.com/vim/vim/archive/v9.0.0173/vim-9.0.0173.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
