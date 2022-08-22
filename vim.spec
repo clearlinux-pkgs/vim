@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 9.0.0246
-Release  : 2774
+Release  : 2775
 URL      : https://github.com/vim/vim/archive/v9.0.0246/vim-9.0.0246.tar.gz
 Source0  : https://github.com/vim/vim/archive/v9.0.0246/vim-9.0.0246.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -13,6 +13,7 @@ License  : LGPL-2.1 MIT Vim
 Requires: vim-bin = %{version}-%{release}
 Requires: vim-data = %{version}-%{release}
 Requires: vim-filemap = %{version}-%{release}
+Requires: vim-lib = %{version}-%{release}
 Requires: vim-license = %{version}-%{release}
 Requires: vim-man = %{version}-%{release}
 Requires: usrbinvi
@@ -69,6 +70,17 @@ Group: Default
 filemap components for the vim package.
 
 
+%package lib
+Summary: lib components for the vim package.
+Group: Libraries
+Requires: vim-data = %{version}-%{release}
+Requires: vim-license = %{version}-%{release}
+Requires: vim-filemap = %{version}-%{release}
+
+%description lib
+lib components for the vim package.
+
+
 %package license
 Summary: license components for the vim package.
 Group: Default
@@ -108,7 +120,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1661188698
+export SOURCE_DATE_EPOCH=1661195588
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -160,7 +172,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make  %{?_smp_mflags}
 popd
 %install
-export SOURCE_DATE_EPOCH=1661188698
+export SOURCE_DATE_EPOCH=1661195588
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518
@@ -2088,6 +2100,10 @@ install ./vim-minimal %{buildroot}/usr/bin/
 %files filemap
 %defattr(-,root,root,-)
 /usr/share/clear/filemap/filemap-vim
+
+%files lib
+%defattr(-,root,root,-)
+/usr/share/clear/optimized-elf/other*
 
 %files license
 %defattr(0644,root,root,0755)
