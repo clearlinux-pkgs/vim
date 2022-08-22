@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 9.0.0246
-Release  : 2777
+Release  : 2778
 URL      : https://github.com/vim/vim/archive/v9.0.0246/vim-9.0.0246.tar.gz
 Source0  : https://github.com/vim/vim/archive/v9.0.0246/vim-9.0.0246.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
 Requires: vim-bin = %{version}-%{release}
 Requires: vim-data = %{version}-%{release}
+Requires: vim-filemap = %{version}-%{release}
 Requires: vim-license = %{version}-%{release}
 Requires: vim-man = %{version}-%{release}
 Requires: usrbinvi
@@ -38,6 +39,7 @@ Summary: bin components for the vim package.
 Group: Binaries
 Requires: vim-data = %{version}-%{release}
 Requires: vim-license = %{version}-%{release}
+Requires: vim-filemap = %{version}-%{release}
 
 %description bin
 bin components for the vim package.
@@ -57,6 +59,14 @@ Group: Default
 
 %description extras-minimal
 extras-minimal components for the vim package.
+
+
+%package filemap
+Summary: filemap components for the vim package.
+Group: Default
+
+%description filemap
+filemap components for the vim package.
 
 
 %package license
@@ -98,7 +108,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1661205348
+export SOURCE_DATE_EPOCH=1661208507
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -150,7 +160,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make  %{?_smp_mflags}
 popd
 %install
-export SOURCE_DATE_EPOCH=1661205348
+export SOURCE_DATE_EPOCH=1661208507
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518
@@ -201,6 +211,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/bin/vimdiff
 /usr/bin/vimtutor
 /usr/bin/xxd
+/usr/share/clear/optimized-elf/bin*
 
 %files data
 %defattr(-,root,root,-)
@@ -2073,6 +2084,10 @@ install ./vim-minimal %{buildroot}/usr/bin/
 %files extras-minimal
 %defattr(-,root,root,-)
 /usr/bin/vim-minimal
+
+%files filemap
+%defattr(-,root,root,-)
+/usr/share/clear/filemap/filemap-vim
 
 %files license
 %defattr(0644,root,root,0755)
