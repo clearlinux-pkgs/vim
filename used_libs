@@ -3,4 +3,5 @@ libc.so.6
 libgpm.so.2
 liblua.so.5.4
 libm.so.6
+libpython3.10.so.1.0
 libtinfo.so.6
