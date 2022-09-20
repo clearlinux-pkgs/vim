@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 9.0.0517
-Release  : 2914
+Release  : 2915
 URL      : https://github.com/vim/vim/archive/v9.0.0517/vim-9.0.0517.tar.gz
 Source0  : https://github.com/vim/vim/archive/v9.0.0517/vim-9.0.0517.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -108,7 +108,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1663692204
+export SOURCE_DATE_EPOCH=1663698860
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -160,7 +160,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make  %{?_smp_mflags}
 popd
 %install
-export SOURCE_DATE_EPOCH=1663692204
+export SOURCE_DATE_EPOCH=1663698860
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518 || :
