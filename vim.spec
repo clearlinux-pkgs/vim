@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 9.0.0856
-Release  : 3097
+Release  : 3098
 URL      : https://github.com/vim/vim/archive/v9.0.0856/vim-9.0.0856.tar.gz
 Source0  : https://github.com/vim/vim/archive/v9.0.0856/vim-9.0.0856.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
