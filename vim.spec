@@ -4,7 +4,7 @@
 #
 Name     : vim
 Version  : 9.0.1151
-Release  : 3275
+Release  : 3276
 URL      : https://github.com/vim/vim/archive/v9.0.1151/vim-9.0.1151.tar.gz
 Source0  : https://github.com/vim/vim/archive/v9.0.1151/vim-9.0.1151.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
