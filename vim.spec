@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : vim
-Version  : 9.0.1472
-Release  : 3505
-URL      : https://github.com/vim/vim/archive/v9.0.1472/vim-9.0.1472.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.0.1472/vim-9.0.1472.tar.gz
+Version  : 9.0.1474
+Release  : 3506
+URL      : https://github.com/vim/vim/archive/v9.0.1474/vim-9.0.1474.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.0.1474/vim-9.0.1474.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -91,12 +91,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.0.1472
-cd %{_builddir}/vim-9.0.1472
+%setup -q -n vim-9.0.1474
+cd %{_builddir}/vim-9.0.1474
 %patch1 -p1
 %patch2 -p1
 pushd ..
-cp -a vim-9.0.1472 buildavx2
+cp -a vim-9.0.1474 buildavx2
 popd
 
 %build
@@ -113,7 +113,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682019745
+export SOURCE_DATE_EPOCH=1682106343
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
@@ -162,7 +162,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make
 popd
 %install
-export SOURCE_DATE_EPOCH=1682019745
+export SOURCE_DATE_EPOCH=1682106343
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518 || :
