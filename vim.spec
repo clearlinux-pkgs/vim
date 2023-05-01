@@ -4,16 +4,15 @@
 # Using build pattern: configure
 #
 Name     : vim
-Version  : 9.0.1492
-Release  : 3518
-URL      : https://github.com/vim/vim/archive/v9.0.1492/vim-9.0.1492.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.0.1492/vim-9.0.1492.tar.gz
+Version  : 9.0.1503
+Release  : 3519
+URL      : https://github.com/vim/vim/archive/v9.0.1503/vim-9.0.1503.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.0.1503/vim-9.0.1503.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
 Requires: vim-bin = %{version}-%{release}
 Requires: vim-data = %{version}-%{release}
-Requires: vim-filemap = %{version}-%{release}
 Requires: vim-license = %{version}-%{release}
 Requires: vim-man = %{version}-%{release}
 Requires: usrbinvi
@@ -44,7 +43,6 @@ Summary: bin components for the vim package.
 Group: Binaries
 Requires: vim-data = %{version}-%{release}
 Requires: vim-license = %{version}-%{release}
-Requires: vim-filemap = %{version}-%{release}
 
 %description bin
 bin components for the vim package.
@@ -66,14 +64,6 @@ Group: Default
 extras-minimal components for the vim package.
 
 
-%package filemap
-Summary: filemap components for the vim package.
-Group: Default
-
-%description filemap
-filemap components for the vim package.
-
-
 %package license
 Summary: license components for the vim package.
 Group: Default
@@ -91,12 +81,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.0.1492
-cd %{_builddir}/vim-9.0.1492
+%setup -q -n vim-9.0.1503
+cd %{_builddir}/vim-9.0.1503
 %patch1 -p1
 %patch2 -p1
 pushd ..
-cp -a vim-9.0.1492 buildavx2
+cp -a vim-9.0.1503 buildavx2
 popd
 
 %build
@@ -113,7 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682613755
+export SOURCE_DATE_EPOCH=1682957603
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
@@ -162,7 +152,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make
 popd
 %install
-export SOURCE_DATE_EPOCH=1682613755
+export SOURCE_DATE_EPOCH=1682957603
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518 || :
@@ -205,6 +195,13 @@ install ./vim-minimal %{buildroot}/usr/bin/
 
 %files bin
 %defattr(-,root,root,-)
+/V3/usr/bin/ex
+/V3/usr/bin/rview
+/V3/usr/bin/rvim
+/V3/usr/bin/view
+/V3/usr/bin/vim
+/V3/usr/bin/vimdiff
+/V3/usr/bin/xxd
 /usr/bin/ex
 /usr/bin/rview
 /usr/bin/rvim
@@ -213,7 +210,6 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/bin/vimdiff
 /usr/bin/vimtutor
 /usr/bin/xxd
-/usr/share/clear/optimized-elf/bin*
 
 %files data
 %defattr(-,root,root,-)
@@ -2175,10 +2171,6 @@ install ./vim-minimal %{buildroot}/usr/bin/
 %files extras-minimal
 %defattr(-,root,root,-)
 /usr/bin/vim-minimal
-
-%files filemap
-%defattr(-,root,root,-)
-/usr/share/clear/filemap/filemap-vim
 
 %files license
 %defattr(0644,root,root,0755)
