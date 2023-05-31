@@ -5,7 +5,7 @@
 #
 Name     : vim
 Version  : 9.0.1592
-Release  : 3573
+Release  : 3574
 URL      : https://github.com/vim/vim/archive/v9.0.1592/vim-9.0.1592.tar.gz
 Source0  : https://github.com/vim/vim/archive/v9.0.1592/vim-9.0.1592.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -103,7 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685465162
+export SOURCE_DATE_EPOCH=1685491628
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -152,7 +152,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make
 popd
 %install
-export SOURCE_DATE_EPOCH=1685465162
+export SOURCE_DATE_EPOCH=1685491628
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518 || :
@@ -195,12 +195,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 
 %files bin
 %defattr(-,root,root,-)
-/V3/usr/bin/ex
-/V3/usr/bin/rview
-/V3/usr/bin/rvim
-/V3/usr/bin/view
 /V3/usr/bin/vim
-/V3/usr/bin/vimdiff
 /V3/usr/bin/xxd
 /usr/bin/ex
 /usr/bin/rview
