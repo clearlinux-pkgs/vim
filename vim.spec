@@ -5,7 +5,7 @@
 #
 Name     : vim
 Version  : 9.0.1677
-Release  : 3632
+Release  : 3633
 URL      : https://github.com/vim/vim/archive/v9.0.1677/vim-9.0.1677.tar.gz
 Source0  : https://github.com/vim/vim/archive/v9.0.1677/vim-9.0.1677.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
@@ -103,7 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1688877642
+export SOURCE_DATE_EPOCH=1689750344
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -152,7 +152,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make
 popd
 %install
-export SOURCE_DATE_EPOCH=1688877642
+export SOURCE_DATE_EPOCH=1689750344
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518 || :
