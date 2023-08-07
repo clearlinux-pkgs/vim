@@ -5,7 +5,7 @@
 #
 Name     : vim
 Version  : 9.0.1678
-Release  : 3635
+Release  : 3636
 URL      : https://github.com/vim/vim/archive/v9.0.1678/vim-9.0.1678.tar.gz
 Source0  : https://github.com/vim/vim/archive/v9.0.1678/vim-9.0.1678.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
