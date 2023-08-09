@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : vim
-Version  : 9.0.1679
-Release  : 3637
-URL      : https://github.com/vim/vim/archive/v9.0.1679/vim-9.0.1679.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.0.1679/vim-9.0.1679.tar.gz
+Version  : 9.0.1680
+Release  : 3638
+URL      : https://github.com/vim/vim/archive/v9.0.1680/vim-9.0.1680.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.0.1680/vim-9.0.1680.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -81,12 +81,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.0.1679
-cd %{_builddir}/vim-9.0.1679
+%setup -q -n vim-9.0.1680
+cd %{_builddir}/vim-9.0.1680
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.0.1679 buildavx2
+cp -a vim-9.0.1680 buildavx2
 popd
 
 %build
@@ -103,7 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1691523948
+export SOURCE_DATE_EPOCH=1691599641
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -152,7 +152,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make
 popd
 %install
-export SOURCE_DATE_EPOCH=1691523948
+export SOURCE_DATE_EPOCH=1691599641
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518 || :
@@ -828,6 +828,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim90/ftplugin/udevconf.vim
 /usr/share/vim/vim90/ftplugin/udevperm.vim
 /usr/share/vim/vim90/ftplugin/udevrules.vim
+/usr/share/vim/vim90/ftplugin/unison.vim
 /usr/share/vim/vim90/ftplugin/updatedb.vim
 /usr/share/vim/vim90/ftplugin/urlshortcut.vim
 /usr/share/vim/vim90/ftplugin/usd.vim
@@ -2013,6 +2014,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim90/syntax/udevperm.vim
 /usr/share/vim/vim90/syntax/udevrules.vim
 /usr/share/vim/vim90/syntax/uil.vim
+/usr/share/vim/vim90/syntax/unison.vim
 /usr/share/vim/vim90/syntax/updatedb.vim
 /usr/share/vim/vim90/syntax/upstart.vim
 /usr/share/vim/vim90/syntax/upstreamdat.vim
