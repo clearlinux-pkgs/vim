@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : vim
-Version  : 9.0.1699
-Release  : 3645
-URL      : https://github.com/vim/vim/archive/v9.0.1699/vim-9.0.1699.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.0.1699/vim-9.0.1699.tar.gz
+Version  : 9.0.1702
+Release  : 3646
+URL      : https://github.com/vim/vim/archive/v9.0.1702/vim-9.0.1702.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.0.1702/vim-9.0.1702.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -81,12 +81,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.0.1699
-cd %{_builddir}/vim-9.0.1699
+%setup -q -n vim-9.0.1702
+cd %{_builddir}/vim-9.0.1702
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.0.1699 buildavx2
+cp -a vim-9.0.1702 buildavx2
 popd
 
 %build
@@ -103,7 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1691869267
+export SOURCE_DATE_EPOCH=1691923151
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -152,7 +152,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make
 popd
 %install
-export SOURCE_DATE_EPOCH=1691869267
+export SOURCE_DATE_EPOCH=1691923151
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/vim/100dd019c7d2912226c94666cac0f93eeb82a518 || :
@@ -760,6 +760,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim90/ftplugin/protocols.vim
 /usr/share/vim/vim90/ftplugin/ps1.vim
 /usr/share/vim/vim90/ftplugin/ps1xml.vim
+/usr/share/vim/vim90/ftplugin/pymanifest.vim
 /usr/share/vim/vim90/ftplugin/pyrex.vim
 /usr/share/vim/vim90/ftplugin/python.vim
 /usr/share/vim/vim90/ftplugin/qb64.vim
@@ -1836,6 +1837,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim90/syntax/psl.vim
 /usr/share/vim/vim90/syntax/ptcap.vim
 /usr/share/vim/vim90/syntax/purifylog.vim
+/usr/share/vim/vim90/syntax/pymanifest.vim
 /usr/share/vim/vim90/syntax/pyrex.vim
 /usr/share/vim/vim90/syntax/python.vim
 /usr/share/vim/vim90/syntax/python2.vim
