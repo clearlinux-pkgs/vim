@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : vim
-Version  : 9.0.1740
-Release  : 3653
-URL      : https://github.com/vim/vim/archive/v9.0.1740/vim-9.0.1740.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.0.1740/vim-9.0.1740.tar.gz
+Version  : 9.0.1748
+Release  : 3654
+URL      : https://github.com/vim/vim/archive/v9.0.1748/vim-9.0.1748.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.0.1748/vim-9.0.1748.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -81,12 +81,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.0.1740
-cd %{_builddir}/vim-9.0.1740
+%setup -q -n vim-9.0.1748
+cd %{_builddir}/vim-9.0.1748
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.0.1740 buildavx2
+cp -a vim-9.0.1748 buildavx2
 popd
 
 %build
@@ -103,7 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1692441665
+export SOURCE_DATE_EPOCH=1692452644
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -152,7 +152,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make
 popd
 %install
-export SOURCE_DATE_EPOCH=1692441665
+export SOURCE_DATE_EPOCH=1692452644
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -790,6 +790,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim90/ftplugin/scheme.vim
 /usr/share/vim/vim90/ftplugin/screen.vim
 /usr/share/vim/vim90/ftplugin/scss.vim
+/usr/share/vim/vim90/ftplugin/sed.vim
 /usr/share/vim/vim90/ftplugin/sensors.vim
 /usr/share/vim/vim90/ftplugin/services.vim
 /usr/share/vim/vim90/ftplugin/setserial.vim
