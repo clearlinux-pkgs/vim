@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : vim
-Version  : 9.0.1815
-Release  : 3679
-URL      : https://github.com/vim/vim/archive/v9.0.1815/vim-9.0.1815.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.0.1815/vim-9.0.1815.tar.gz
+Version  : 9.0.1817
+Release  : 3680
+URL      : https://github.com/vim/vim/archive/v9.0.1817/vim-9.0.1817.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.0.1817/vim-9.0.1817.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -81,12 +81,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.0.1815
-cd %{_builddir}/vim-9.0.1815
+%setup -q -n vim-9.0.1817
+cd %{_builddir}/vim-9.0.1817
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.0.1815 buildavx2
+cp -a vim-9.0.1817 buildavx2
 popd
 
 %build
@@ -103,7 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1693251864
+export SOURCE_DATE_EPOCH=1693337977
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -152,7 +152,7 @@ export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3"
 make
 popd
 %install
-export SOURCE_DATE_EPOCH=1693251864
+export SOURCE_DATE_EPOCH=1693337977
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -1329,11 +1329,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim90/pack/dist/opt/dvorak/dvorak/enable.vim
 /usr/share/vim/vim90/pack/dist/opt/dvorak/plugin/dvorak.vim
 /usr/share/vim/vim90/pack/dist/opt/editexisting/plugin/editexisting.vim
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/.appveyor.yml
 /usr/share/vim/vim90/pack/dist/opt/editorconfig/.editorconfig
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/.gitignore
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/.gitmodules
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/.travis.yml
 /usr/share/vim/vim90/pack/dist/opt/editorconfig/CONTRIBUTORS
 /usr/share/vim/vim90/pack/dist/opt/editorconfig/LICENSE
 /usr/share/vim/vim90/pack/dist/opt/editorconfig/LICENSE.PSF
@@ -1345,26 +1341,10 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim90/pack/dist/opt/editorconfig/autoload/editorconfig_core/ini.vim
 /usr/share/vim/vim90/pack/dist/opt/editorconfig/autoload/editorconfig_core/util.vim
 /usr/share/vim/vim90/pack/dist/opt/editorconfig/doc/editorconfig.txt
+/usr/share/vim/vim90/pack/dist/opt/editorconfig/doc/tags
 /usr/share/vim/vim90/pack/dist/opt/editorconfig/ftdetect/editorconfig.vim
 /usr/share/vim/vim90/pack/dist/opt/editorconfig/mkzip.sh
 /usr/share/vim/vim90/pack/dist/opt/editorconfig/plugin/editorconfig.vim
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/core/CMakeLists.txt
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/core/CTestCustom.cmake
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/core/ecvbslib.vbs
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/core/ecvimlib.ps1
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/core/editorconfig
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/core/editorconfig.bat
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/core/editorconfig1.vbs
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/core/editorconfig2.ps1
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/fetch-vim.bat
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/fetch-vim.sh
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/plugin/.gitignore
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/plugin/Gemfile
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/plugin/Gemfile.lock
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/plugin/Rakefile
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/plugin/spec/.editorconfig
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/plugin/spec/editorconfig_spec.rb
-/usr/share/vim/vim90/pack/dist/opt/editorconfig/tests/travis-test.sh
 /usr/share/vim/vim90/pack/dist/opt/justify/plugin/justify.vim
 /usr/share/vim/vim90/pack/dist/opt/matchit/autoload/matchit.vim
 /usr/share/vim/vim90/pack/dist/opt/matchit/doc/matchit.txt
