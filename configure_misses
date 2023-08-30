@@ -112,14 +112,6 @@ Configure miss: AvailabilityMacros.h
 Configure miss: AvailabilityMacros.h
 Configure miss: AvailabilityMacros.h
 Configure miss: AvailabilityMacros.h
-Configure miss: AvailabilityMacros.h presence
-Configure miss: AvailabilityMacros.h presence
-Configure miss: AvailabilityMacros.h presence
-Configure miss: AvailabilityMacros.h presence
-Configure miss: AvailabilityMacros.h usability
-Configure miss: AvailabilityMacros.h usability
-Configure miss: AvailabilityMacros.h usability
-Configure miss: AvailabilityMacros.h usability
 Configure miss: CYGWIN or MSYS environment
 Configure miss: CYGWIN or MSYS environment
 Configure miss: CYGWIN or MSYS environment
@@ -150,14 +142,6 @@ Configure miss: X11/SM/SMlib.h
 Configure miss: X11/SM/SMlib.h
 Configure miss: X11/SM/SMlib.h
 Configure miss: X11/SM/SMlib.h
-Configure miss: X11/SM/SMlib.h presence
-Configure miss: X11/SM/SMlib.h presence
-Configure miss: X11/SM/SMlib.h presence
-Configure miss: X11/SM/SMlib.h presence
-Configure miss: X11/SM/SMlib.h usability
-Configure miss: X11/SM/SMlib.h usability
-Configure miss: X11/SM/SMlib.h usability
-Configure miss: X11/SM/SMlib.h usability
 Configure miss: _xpg4_setrunelocale in -lxpg4
 Configure miss: _xpg4_setrunelocale in -lxpg4
 Configure miss: _xpg4_setrunelocale in -lxpg4
@@ -174,38 +158,14 @@ Configure miss: attr/xattr.h
 Configure miss: attr/xattr.h
 Configure miss: attr/xattr.h
 Configure miss: attr/xattr.h
-Configure miss: attr/xattr.h presence
-Configure miss: attr/xattr.h presence
-Configure miss: attr/xattr.h presence
-Configure miss: attr/xattr.h presence
-Configure miss: attr/xattr.h usability
-Configure miss: attr/xattr.h usability
-Configure miss: attr/xattr.h usability
-Configure miss: attr/xattr.h usability
 Configure miss: dispatch/dispatch.h
 Configure miss: dispatch/dispatch.h
 Configure miss: dispatch/dispatch.h
 Configure miss: dispatch/dispatch.h
-Configure miss: dispatch/dispatch.h presence
-Configure miss: dispatch/dispatch.h presence
-Configure miss: dispatch/dispatch.h presence
-Configure miss: dispatch/dispatch.h presence
-Configure miss: dispatch/dispatch.h usability
-Configure miss: dispatch/dispatch.h usability
-Configure miss: dispatch/dispatch.h usability
-Configure miss: dispatch/dispatch.h usability
 Configure miss: frame.h
 Configure miss: frame.h
 Configure miss: frame.h
 Configure miss: frame.h
-Configure miss: frame.h presence
-Configure miss: frame.h presence
-Configure miss: frame.h presence
-Configure miss: frame.h presence
-Configure miss: frame.h usability
-Configure miss: frame.h usability
-Configure miss: frame.h usability
-Configure miss: frame.h usability
 Configure miss: getcwd implementation is broken
 Configure miss: getcwd implementation is broken
 Configure miss: getcwd implementation is broken
@@ -226,14 +186,6 @@ Configure miss: libc.h
 Configure miss: libc.h
 Configure miss: libc.h
 Configure miss: libc.h
-Configure miss: libc.h presence
-Configure miss: libc.h presence
-Configure miss: libc.h presence
-Configure miss: libc.h presence
-Configure miss: libc.h usability
-Configure miss: libc.h usability
-Configure miss: libc.h usability
-Configure miss: libc.h usability
 Configure miss: libcanberra
 Configure miss: libcanberra
 Configure miss: libsodium
@@ -256,26 +208,10 @@ Configure miss: stropts.h
 Configure miss: stropts.h
 Configure miss: stropts.h
 Configure miss: stropts.h
-Configure miss: stropts.h presence
-Configure miss: stropts.h presence
-Configure miss: stropts.h presence
-Configure miss: stropts.h presence
-Configure miss: stropts.h usability
-Configure miss: stropts.h usability
-Configure miss: stropts.h usability
-Configure miss: stropts.h usability
 Configure miss: sys/access.h
 Configure miss: sys/access.h
 Configure miss: sys/access.h
 Configure miss: sys/access.h
-Configure miss: sys/access.h presence
-Configure miss: sys/access.h presence
-Configure miss: sys/access.h presence
-Configure miss: sys/access.h presence
-Configure miss: sys/access.h usability
-Configure miss: sys/access.h usability
-Configure miss: sys/access.h usability
-Configure miss: sys/access.h usability
 Configure miss: sys/ptem.h
 Configure miss: sys/ptem.h
 Configure miss: sys/ptem.h
@@ -284,26 +220,10 @@ Configure miss: sys/ptms.h
 Configure miss: sys/ptms.h
 Configure miss: sys/ptms.h
 Configure miss: sys/ptms.h
-Configure miss: sys/ptms.h presence
-Configure miss: sys/ptms.h presence
-Configure miss: sys/ptms.h presence
-Configure miss: sys/ptms.h presence
-Configure miss: sys/ptms.h usability
-Configure miss: sys/ptms.h usability
-Configure miss: sys/ptms.h usability
-Configure miss: sys/ptms.h usability
 Configure miss: sys/stream.h
 Configure miss: sys/stream.h
 Configure miss: sys/stream.h
 Configure miss: sys/stream.h
-Configure miss: sys/stream.h presence
-Configure miss: sys/stream.h presence
-Configure miss: sys/stream.h presence
-Configure miss: sys/stream.h presence
-Configure miss: sys/stream.h usability
-Configure miss: sys/stream.h usability
-Configure miss: sys/stream.h usability
-Configure miss: sys/stream.h usability
 Configure miss: sys/sysctl.h
 Configure miss: sys/sysctl.h
 Configure miss: sys/sysctl.h
@@ -320,26 +240,10 @@ Configure miss: util/debug.h
 Configure miss: util/debug.h
 Configure miss: util/debug.h
 Configure miss: util/debug.h
-Configure miss: util/debug.h presence
-Configure miss: util/debug.h presence
-Configure miss: util/debug.h presence
-Configure miss: util/debug.h presence
-Configure miss: util/debug.h usability
-Configure miss: util/debug.h usability
-Configure miss: util/debug.h usability
-Configure miss: util/debug.h usability
 Configure miss: util/msg18n.h
 Configure miss: util/msg18n.h
 Configure miss: util/msg18n.h
 Configure miss: util/msg18n.h
-Configure miss: util/msg18n.h presence
-Configure miss: util/msg18n.h presence
-Configure miss: util/msg18n.h presence
-Configure miss: util/msg18n.h presence
-Configure miss: util/msg18n.h usability
-Configure miss: util/msg18n.h usability
-Configure miss: util/msg18n.h usability
-Configure miss: util/msg18n.h usability
 Configure miss: whether stack_t has an ss_base field
 Configure miss: whether stack_t has an ss_base field
 Configure miss: whether stack_t has an ss_base field
