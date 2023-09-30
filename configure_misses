@@ -142,6 +142,10 @@ Configure miss: X11/SM/SMlib.h
 Configure miss: X11/SM/SMlib.h
 Configure miss: X11/SM/SMlib.h
 Configure miss: X11/SM/SMlib.h
+Configure miss: XATTR_NAME_SMACKEXEC in linux/xattr.h
+Configure miss: XATTR_NAME_SMACKEXEC in linux/xattr.h
+Configure miss: XATTR_NAME_SMACKEXEC in linux/xattr.h
+Configure miss: XATTR_NAME_SMACKEXEC in linux/xattr.h
 Configure miss: _xpg4_setrunelocale in -lxpg4
 Configure miss: _xpg4_setrunelocale in -lxpg4
 Configure miss: _xpg4_setrunelocale in -lxpg4
@@ -154,10 +158,6 @@ Configure miss: acl_get_file in -lposix1e
 Configure miss: acl_get_file in -lposix1e
 Configure miss: acl_get_file in -lposix1e
 Configure miss: acl_get_file in -lposix1e
-Configure miss: attr/xattr.h
-Configure miss: attr/xattr.h
-Configure miss: attr/xattr.h
-Configure miss: attr/xattr.h
 Configure miss: dispatch/dispatch.h
 Configure miss: dispatch/dispatch.h
 Configure miss: dispatch/dispatch.h
