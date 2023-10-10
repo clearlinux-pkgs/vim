@@ -5,7 +5,7 @@
 #
 Name     : vim
 Version  : 9.0.2009
-Release  : 3741
+Release  : 3742
 URL      : https://github.com/vim/vim/archive/v9.0.2009/vim-9.0.2009.tar.gz
 Source0  : https://github.com/vim/vim/archive/v9.0.2009/vim-9.0.2009.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
