@@ -6,10 +6,10 @@
 # autospec commit: 250a666
 #
 Name     : vim
-Version  : 9.0.2067
-Release  : 3758
-URL      : https://github.com/vim/vim/archive/v9.0.2067/vim-9.0.2067.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.0.2067/vim-9.0.2067.tar.gz
+Version  : 9.0.2073
+Release  : 3759
+URL      : https://github.com/vim/vim/archive/v9.0.2073/vim-9.0.2073.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.0.2073/vim-9.0.2073.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.0.2067
-cd %{_builddir}/vim-9.0.2067
+%setup -q -n vim-9.0.2073
+cd %{_builddir}/vim-9.0.2073
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.0.2067 buildavx2
+cp -a vim-9.0.2073 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1698263164
+export SOURCE_DATE_EPOCH=1698360410
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -171,7 +171,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1698263164
+export SOURCE_DATE_EPOCH=1698360410
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -632,6 +632,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim90/ftplugin/cvsrc.vim
 /usr/share/vim/vim90/ftplugin/debchangelog.vim
 /usr/share/vim/vim90/ftplugin/debcontrol.vim
+/usr/share/vim/vim90/ftplugin/debsources.vim
 /usr/share/vim/vim90/ftplugin/denyhosts.vim
 /usr/share/vim/vim90/ftplugin/desktop.vim
 /usr/share/vim/vim90/ftplugin/dictconf.vim
@@ -759,6 +760,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim90/ftplugin/nroff.vim
 /usr/share/vim/vim90/ftplugin/nsis.vim
 /usr/share/vim/vim90/ftplugin/objc.vim
+/usr/share/vim/vim90/ftplugin/objdump.vim
 /usr/share/vim/vim90/ftplugin/obse.vim
 /usr/share/vim/vim90/ftplugin/ocaml.vim
 /usr/share/vim/vim90/ftplugin/occam.vim
@@ -1558,6 +1560,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim90/syntax/datascript.vim
 /usr/share/vim/vim90/syntax/dcd.vim
 /usr/share/vim/vim90/syntax/dcl.vim
+/usr/share/vim/vim90/syntax/deb822sources.vim
 /usr/share/vim/vim90/syntax/debchangelog.vim
 /usr/share/vim/vim90/syntax/debcontrol.vim
 /usr/share/vim/vim90/syntax/debcopyright.vim
@@ -1960,6 +1963,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim90/syntax/shared/context-data-interfaces.vim
 /usr/share/vim/vim90/syntax/shared/context-data-metafun.vim
 /usr/share/vim/vim90/syntax/shared/context-data-tex.vim
+/usr/share/vim/vim90/syntax/shared/debversions.vim
 /usr/share/vim/vim90/syntax/shared/hgcommitDiff.vim
 /usr/share/vim/vim90/syntax/shared/typescriptcommon.vim
 /usr/share/vim/vim90/syntax/sicad.vim
