@@ -6,10 +6,10 @@
 # autospec commit: f56f1fa
 #
 Name     : vim
-Version  : 9.1.0275
-Release  : 3908
-URL      : https://github.com/vim/vim/archive/v9.1.0275/vim-9.1.0275.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0275/vim-9.1.0275.tar.gz
+Version  : 9.1.0276
+Release  : 3909
+URL      : https://github.com/vim/vim/archive/v9.1.0276/vim-9.1.0276.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0276/vim-9.1.0276.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0275
-cd %{_builddir}/vim-9.1.0275
+%setup -q -n vim-9.1.0276
+cd %{_builddir}/vim-9.1.0276
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0275 buildavx2
+cp -a vim-9.1.0276 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1712605466
+export SOURCE_DATE_EPOCH=1712607353
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1712605466
+export SOURCE_DATE_EPOCH=1712607353
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -389,6 +389,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/compiler/neato.vim
 /usr/share/vim/vim91/compiler/ocaml.vim
 /usr/share/vim/vim91/compiler/onsgmls.vim
+/usr/share/vim/vim91/compiler/pandoc.vim
 /usr/share/vim/vim91/compiler/pbx.vim
 /usr/share/vim/vim91/compiler/perl.vim
 /usr/share/vim/vim91/compiler/perlcritic.vim
@@ -1875,6 +1876,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/syntax/pacmanlog.vim
 /usr/share/vim/vim91/syntax/pamconf.vim
 /usr/share/vim/vim91/syntax/pamenv.vim
+/usr/share/vim/vim91/syntax/pandoc.vim
 /usr/share/vim/vim91/syntax/papp.vim
 /usr/share/vim/vim91/syntax/pascal.vim
 /usr/share/vim/vim91/syntax/passwd.vim
