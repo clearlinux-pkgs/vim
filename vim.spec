@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : vim
-Version  : 9.1.0353
-Release  : 3935
-URL      : https://github.com/vim/vim/archive/v9.1.0353/vim-9.1.0353.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0353/vim-9.1.0353.tar.gz
+Version  : 9.1.0354
+Release  : 3936
+URL      : https://github.com/vim/vim/archive/v9.1.0354/vim-9.1.0354.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0354/vim-9.1.0354.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0353
-cd %{_builddir}/vim-9.1.0353
+%setup -q -n vim-9.1.0354
+cd %{_builddir}/vim-9.1.0354
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0353 buildavx2
+cp -a vim-9.1.0354 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1713474563
+export SOURCE_DATE_EPOCH=1713480003
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1713474563
+export SOURCE_DATE_EPOCH=1713480003
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -884,6 +884,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/tt2html.vim
 /usr/share/vim/vim91/ftplugin/typescript.vim
 /usr/share/vim/vim91/ftplugin/typescriptreact.vim
+/usr/share/vim/vim91/ftplugin/uci.vim
 /usr/share/vim/vim91/ftplugin/udevconf.vim
 /usr/share/vim/vim91/ftplugin/udevperm.vim
 /usr/share/vim/vim91/ftplugin/udevrules.vim
@@ -2118,6 +2119,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/syntax/typescript.vim
 /usr/share/vim/vim91/syntax/typescriptreact.vim
 /usr/share/vim/vim91/syntax/uc.vim
+/usr/share/vim/vim91/syntax/uci.vim
 /usr/share/vim/vim91/syntax/udevconf.vim
 /usr/share/vim/vim91/syntax/udevperm.vim
 /usr/share/vim/vim91/syntax/udevrules.vim
