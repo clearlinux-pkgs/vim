@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : vim
-Version  : 9.1.0362
-Release  : 3939
-URL      : https://github.com/vim/vim/archive/v9.1.0362/vim-9.1.0362.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0362/vim-9.1.0362.tar.gz
+Version  : 9.1.0363
+Release  : 3940
+URL      : https://github.com/vim/vim/archive/v9.1.0363/vim-9.1.0363.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0363/vim-9.1.0363.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0362
-cd %{_builddir}/vim-9.1.0362
+%setup -q -n vim-9.1.0363
+cd %{_builddir}/vim-9.1.0363
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0362 buildavx2
+cp -a vim-9.1.0363 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1713706976
+export SOURCE_DATE_EPOCH=1713728379
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1713706976
+export SOURCE_DATE_EPOCH=1713728379
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -616,6 +616,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/art.vim
 /usr/share/vim/vim91/ftplugin/asciidoc.vim
 /usr/share/vim/vim91/ftplugin/aspvbs.vim
+/usr/share/vim/vim91/ftplugin/astro.vim
 /usr/share/vim/vim91/ftplugin/automake.vim
 /usr/share/vim/vim91/ftplugin/awk.vim
 /usr/share/vim/vim91/ftplugin/bash.vim
@@ -927,6 +928,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/indent/ada.vim
 /usr/share/vim/vim91/indent/ant.vim
 /usr/share/vim/vim91/indent/asm.vim
+/usr/share/vim/vim91/indent/astro.vim
 /usr/share/vim/vim91/indent/automake.vim
 /usr/share/vim/vim91/indent/awk.vim
 /usr/share/vim/vim91/indent/bash.vim
@@ -1513,6 +1515,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/syntax/aspvbs.vim
 /usr/share/vim/vim91/syntax/asterisk.vim
 /usr/share/vim/vim91/syntax/asteriskvm.vim
+/usr/share/vim/vim91/syntax/astro.vim
 /usr/share/vim/vim91/syntax/atlas.vim
 /usr/share/vim/vim91/syntax/autodoc.vim
 /usr/share/vim/vim91/syntax/autohotkey.vim
