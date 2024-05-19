@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : vim
-Version  : 9.1.0420
-Release  : 3968
-URL      : https://github.com/vim/vim/archive/v9.1.0420/vim-9.1.0420.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0420/vim-9.1.0420.tar.gz
+Version  : 9.1.0421
+Release  : 3969
+URL      : https://github.com/vim/vim/archive/v9.1.0421/vim-9.1.0421.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0421/vim-9.1.0421.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0420
-cd %{_builddir}/vim-9.1.0420
+%setup -q -n vim-9.1.0421
+cd %{_builddir}/vim-9.1.0421
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0420 buildavx2
+cp -a vim-9.1.0421 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1716104532
+export SOURCE_DATE_EPOCH=1716115099
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1716104532
+export SOURCE_DATE_EPOCH=1716115099
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -654,6 +654,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/css.vim
 /usr/share/vim/vim91/ftplugin/cucumber.vim
 /usr/share/vim/vim91/ftplugin/cvsrc.vim
+/usr/share/vim/vim91/ftplugin/dart.vim
 /usr/share/vim/vim91/ftplugin/deb822sources.vim
 /usr/share/vim/vim91/ftplugin/debchangelog.vim
 /usr/share/vim/vim91/ftplugin/debcontrol.vim
@@ -704,6 +705,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/gitsendemail.vim
 /usr/share/vim/vim91/ftplugin/gpg.vim
 /usr/share/vim/vim91/ftplugin/gprof.vim
+/usr/share/vim/vim91/ftplugin/graphql.vim
 /usr/share/vim/vim91/ftplugin/groovy.vim
 /usr/share/vim/vim91/ftplugin/group.vim
 /usr/share/vim/vim91/ftplugin/grub.vim
@@ -721,6 +723,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/html.vim
 /usr/share/vim/vim91/ftplugin/htmldjango.vim
 /usr/share/vim/vim91/ftplugin/hurl.vim
+/usr/share/vim/vim91/ftplugin/hyprlang.vim
 /usr/share/vim/vim91/ftplugin/i3config.vim
 /usr/share/vim/vim91/ftplugin/icon.vim
 /usr/share/vim/vim91/ftplugin/indent.vim
