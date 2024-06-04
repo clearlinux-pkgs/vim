@@ -6,10 +6,10 @@
 # autospec commit: fbcebd0
 #
 Name     : vim
-Version  : 9.1.0465
-Release  : 3988
-URL      : https://github.com/vim/vim/archive/v9.1.0465/vim-9.1.0465.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0465/vim-9.1.0465.tar.gz
+Version  : 9.1.0466
+Release  : 3989
+URL      : https://github.com/vim/vim/archive/v9.1.0466/vim-9.1.0466.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0466/vim-9.1.0466.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0465
-cd %{_builddir}/vim-9.1.0465
+%setup -q -n vim-9.1.0466
+cd %{_builddir}/vim-9.1.0466
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0465 buildavx2
+cp -a vim-9.1.0466 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1717455091
+export SOURCE_DATE_EPOCH=1717540775
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1717455091
+export SOURCE_DATE_EPOCH=1717540775
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -1412,7 +1412,6 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/menu.vim
 /usr/share/vim/vim91/mswin.vim
 /usr/share/vim/vim91/optwin.vim
-/usr/share/vim/vim91/pack/dist
 /usr/share/vim/vim91/pack/dist/opt/cfilter/plugin/cfilter.vim
 /usr/share/vim/vim91/pack/dist/opt/comment/autoload/comment.vim
 /usr/share/vim/vim91/pack/dist/opt/comment/doc/comment.txt
@@ -1445,6 +1444,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/pack/dist/opt/matchit/plugin/matchit.vim
 /usr/share/vim/vim91/pack/dist/opt/shellmenu/plugin/shellmenu.vim
 /usr/share/vim/vim91/pack/dist/opt/swapmouse/plugin/swapmouse.vim
+/usr/share/vim/vim91/pack/dist/opt/termdebug/plugin/termdebug.vim
 /usr/share/vim/vim91/plugin/README.txt
 /usr/share/vim/vim91/plugin/getscriptPlugin.vim
 /usr/share/vim/vim91/plugin/gzip.vim
