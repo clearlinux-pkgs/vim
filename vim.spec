@@ -6,10 +6,10 @@
 # autospec commit: fbcebd0
 #
 Name     : vim
-Version  : 9.1.0474
-Release  : 3993
-URL      : https://github.com/vim/vim/archive/v9.1.0474/vim-9.1.0474.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0474/vim-9.1.0474.tar.gz
+Version  : 9.1.0477
+Release  : 3994
+URL      : https://github.com/vim/vim/archive/v9.1.0477/vim-9.1.0477.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0477/vim-9.1.0477.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0474
-cd %{_builddir}/vim-9.1.0474
+%setup -q -n vim-9.1.0477
+cd %{_builddir}/vim-9.1.0477
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0474 buildavx2
+cp -a vim-9.1.0477 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1718049458
+export SOURCE_DATE_EPOCH=1718212648
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1718049458
+export SOURCE_DATE_EPOCH=1718212648
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -746,6 +746,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/jsp.vim
 /usr/share/vim/vim91/ftplugin/julia.vim
 /usr/share/vim/vim91/ftplugin/kconfig.vim
+/usr/share/vim/vim91/ftplugin/kdl.vim
 /usr/share/vim/vim91/ftplugin/kotlin.vim
 /usr/share/vim/vim91/ftplugin/kwt.vim
 /usr/share/vim/vim91/ftplugin/lc.vim
@@ -1018,6 +1019,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/indent/jsonc.vim
 /usr/share/vim/vim91/indent/jsp.vim
 /usr/share/vim/vim91/indent/julia.vim
+/usr/share/vim/vim91/indent/kdl.vim
 /usr/share/vim/vim91/indent/kotlin.vim
 /usr/share/vim/vim91/indent/krl.vim
 /usr/share/vim/vim91/indent/ld.vim
@@ -1800,6 +1802,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/syntax/jsp.vim
 /usr/share/vim/vim91/syntax/julia.vim
 /usr/share/vim/vim91/syntax/kconfig.vim
+/usr/share/vim/vim91/syntax/kdl.vim
 /usr/share/vim/vim91/syntax/kivy.vim
 /usr/share/vim/vim91/syntax/kix.vim
 /usr/share/vim/vim91/syntax/kotlin.vim
