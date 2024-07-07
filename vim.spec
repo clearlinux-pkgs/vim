@@ -6,10 +6,10 @@
 # autospec commit: 2659038
 #
 Name     : vim
-Version  : 9.1.0538
-Release  : 4018
-URL      : https://github.com/vim/vim/archive/v9.1.0538/vim-9.1.0538.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0538/vim-9.1.0538.tar.gz
+Version  : 9.1.0544
+Release  : 4019
+URL      : https://github.com/vim/vim/archive/v9.1.0544/vim-9.1.0544.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0544/vim-9.1.0544.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0538
-cd %{_builddir}/vim-9.1.0538
+%setup -q -n vim-9.1.0544
+cd %{_builddir}/vim-9.1.0544
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0538 buildavx2
+cp -a vim-9.1.0544 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1720284453
+export SOURCE_DATE_EPOCH=1720381460
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1720284453
+export SOURCE_DATE_EPOCH=1720381460
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -632,6 +632,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/btm.vim
 /usr/share/vim/vim91/ftplugin/bzl.vim
 /usr/share/vim/vim91/ftplugin/c.vim
+/usr/share/vim/vim91/ftplugin/cabal.vim
 /usr/share/vim/vim91/ftplugin/calendar.vim
 /usr/share/vim/vim91/ftplugin/cdrdaoconf.vim
 /usr/share/vim/vim91/ftplugin/cedar.vim
@@ -643,6 +644,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/chicken.vim
 /usr/share/vim/vim91/ftplugin/clojure.vim
 /usr/share/vim/vim91/ftplugin/cmake.vim
+/usr/share/vim/vim91/ftplugin/cmakecache.vim
 /usr/share/vim/vim91/ftplugin/cobol.vim
 /usr/share/vim/vim91/ftplugin/conf.vim
 /usr/share/vim/vim91/ftplugin/config.vim
@@ -658,6 +660,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/css.vim
 /usr/share/vim/vim91/ftplugin/csv.vim
 /usr/share/vim/vim91/ftplugin/cucumber.vim
+/usr/share/vim/vim91/ftplugin/cuda.vim
 /usr/share/vim/vim91/ftplugin/cvsrc.vim
 /usr/share/vim/vim91/ftplugin/dart.vim
 /usr/share/vim/vim91/ftplugin/deb822sources.vim
@@ -678,6 +681,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/dtrace.vim
 /usr/share/vim/vim91/ftplugin/dts.vim
 /usr/share/vim/vim91/ftplugin/dune.vim
+/usr/share/vim/vim91/ftplugin/editorconfig.vim
 /usr/share/vim/vim91/ftplugin/eiffel.vim
 /usr/share/vim/vim91/ftplugin/elinks.vim
 /usr/share/vim/vim91/ftplugin/elixir.vim
@@ -738,6 +742,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/ishd.vim
 /usr/share/vim/vim91/ftplugin/j.vim
 /usr/share/vim/vim91/ftplugin/java.vim
+/usr/share/vim/vim91/ftplugin/javacc.vim
 /usr/share/vim/vim91/ftplugin/javascript.vim
 /usr/share/vim/vim91/ftplugin/javascriptreact.vim
 /usr/share/vim/vim91/ftplugin/jj.vim
@@ -751,11 +756,14 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/julia.vim
 /usr/share/vim/vim91/ftplugin/kconfig.vim
 /usr/share/vim/vim91/ftplugin/kdl.vim
+/usr/share/vim/vim91/ftplugin/kivy.vim
 /usr/share/vim/vim91/ftplugin/kotlin.vim
 /usr/share/vim/vim91/ftplugin/kwt.vim
 /usr/share/vim/vim91/ftplugin/lc.vim
 /usr/share/vim/vim91/ftplugin/ld.vim
+/usr/share/vim/vim91/ftplugin/ldapconf.vim
 /usr/share/vim/vim91/ftplugin/less.vim
+/usr/share/vim/vim91/ftplugin/lex.vim
 /usr/share/vim/vim91/ftplugin/lftp.vim
 /usr/share/vim/vim91/ftplugin/libao.vim
 /usr/share/vim/vim91/ftplugin/limits.vim
@@ -794,6 +802,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/mrxvtrc.vim
 /usr/share/vim/vim91/ftplugin/msmessages.vim
 /usr/share/vim/vim91/ftplugin/muttrc.vim
+/usr/share/vim/vim91/ftplugin/mysql.vim
 /usr/share/vim/vim91/ftplugin/nanorc.vim
 /usr/share/vim/vim91/ftplugin/neomuttrc.vim
 /usr/share/vim/vim91/ftplugin/netrc.vim
@@ -803,6 +812,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/nroff.vim
 /usr/share/vim/vim91/ftplugin/nsis.vim
 /usr/share/vim/vim91/ftplugin/objc.vim
+/usr/share/vim/vim91/ftplugin/objcpp.vim
 /usr/share/vim/vim91/ftplugin/objdump.vim
 /usr/share/vim/vim91/ftplugin/obse.vim
 /usr/share/vim/vim91/ftplugin/ocaml.vim
@@ -884,6 +894,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/solution.vim
 /usr/share/vim/vim91/ftplugin/spec.vim
 /usr/share/vim/vim91/ftplugin/sql.vim
+/usr/share/vim/vim91/ftplugin/squirrel.vim
 /usr/share/vim/vim91/ftplugin/ssa.vim
 /usr/share/vim/vim91/ftplugin/sshconfig.vim
 /usr/share/vim/vim91/ftplugin/sshdconfig.vim
@@ -905,6 +916,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/terraform.vim
 /usr/share/vim/vim91/ftplugin/tex.vim
 /usr/share/vim/vim91/ftplugin/text.vim
+/usr/share/vim/vim91/ftplugin/tf.vim
 /usr/share/vim/vim91/ftplugin/tidy.vim
 /usr/share/vim/vim91/ftplugin/tmux.vim
 /usr/share/vim/vim91/ftplugin/toml.vim
@@ -942,6 +954,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/xs.vim
 /usr/share/vim/vim91/ftplugin/xsd.vim
 /usr/share/vim/vim91/ftplugin/xslt.vim
+/usr/share/vim/vim91/ftplugin/yacc.vim
 /usr/share/vim/vim91/ftplugin/yaml.vim
 /usr/share/vim/vim91/ftplugin/zathurarc.vim
 /usr/share/vim/vim91/ftplugin/zig.vim
