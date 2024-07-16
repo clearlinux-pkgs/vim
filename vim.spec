@@ -6,10 +6,10 @@
 # autospec commit: b858a2a
 #
 Name     : vim
-Version  : 9.1.0589
-Release  : 4036
-URL      : https://github.com/vim/vim/archive/v9.1.0589/vim-9.1.0589.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0589/vim-9.1.0589.tar.gz
+Version  : 9.1.0592
+Release  : 4037
+URL      : https://github.com/vim/vim/archive/v9.1.0592/vim-9.1.0592.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0592/vim-9.1.0592.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0589
-cd %{_builddir}/vim-9.1.0589
+%setup -q -n vim-9.1.0592
+cd %{_builddir}/vim-9.1.0592
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0589 buildavx2
+cp -a vim-9.1.0592 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1721073039
+export SOURCE_DATE_EPOCH=1721159821
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1721073039
+export SOURCE_DATE_EPOCH=1721159821
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -796,6 +796,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/markdown.vim
 /usr/share/vim/vim91/ftplugin/masm.vim
 /usr/share/vim/vim91/ftplugin/matlab.vim
+/usr/share/vim/vim91/ftplugin/mediawiki.vim
 /usr/share/vim/vim91/ftplugin/mermaid.vim
 /usr/share/vim/vim91/ftplugin/mf.vim
 /usr/share/vim/vim91/ftplugin/mma.vim
@@ -1891,6 +1892,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/syntax/master.vim
 /usr/share/vim/vim91/syntax/matlab.vim
 /usr/share/vim/vim91/syntax/maxima.vim
+/usr/share/vim/vim91/syntax/mediawiki.vim
 /usr/share/vim/vim91/syntax/mel.vim
 /usr/share/vim/vim91/syntax/mermaid.vim
 /usr/share/vim/vim91/syntax/messages.vim
