@@ -6,10 +6,10 @@
 # autospec commit: 356da62
 #
 Name     : vim
-Version  : 9.1.0621
-Release  : 4052
-URL      : https://github.com/vim/vim/archive/v9.1.0621/vim-9.1.0621.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0621/vim-9.1.0621.tar.gz
+Version  : 9.1.0625
+Release  : 4053
+URL      : https://github.com/vim/vim/archive/v9.1.0625/vim-9.1.0625.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0625/vim-9.1.0625.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0621
-cd %{_builddir}/vim-9.1.0621
+%setup -q -n vim-9.1.0625
+cd %{_builddir}/vim-9.1.0625
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0621 buildavx2
+cp -a vim-9.1.0625 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1722014787
+export SOURCE_DATE_EPOCH=1722016267
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1722014787
+export SOURCE_DATE_EPOCH=1722016267
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/src/libvterm/LICENSE %{buildroot}/usr/share/package-licenses/vim/9979f112bdecefd99762f24f6af76972c2a3a1a6 || :
@@ -1493,7 +1493,6 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/plugin/tohtml.vim
 /usr/share/vim/vim91/plugin/vimballPlugin.vim
 /usr/share/vim/vim91/plugin/zipPlugin.vim
-/usr/share/vim/vim91/print/
 /usr/share/vim/vim91/print/ascii.ps
 /usr/share/vim/vim91/print/cidfont.ps
 /usr/share/vim/vim91/print/cns_roman.ps
@@ -1523,6 +1522,10 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/print/jis_roman.ps
 /usr/share/vim/vim91/print/koi8-r.ps
 /usr/share/vim/vim91/print/koi8-u.ps
+/usr/share/vim/vim91/print/ks_roman.ps
+/usr/share/vim/vim91/print/latin1.ps
+/usr/share/vim/vim91/print/mac-roman.ps
+/usr/share/vim/vim91/print/prolog.ps
 /usr/share/vim/vim91/scripts.vim
 /usr/share/vim/vim91/spell/check_locales.vim
 /usr/share/vim/vim91/spell/cleanadd.vim
