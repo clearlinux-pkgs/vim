@@ -98,6 +98,8 @@ Configure miss: --with-python-command argument
 Configure miss: --with-python-command argument
 Configure miss: --with-python3-command argument
 Configure miss: --with-python3-command argument
+Configure miss: --with-python3-stable-abi argument
+Configure miss: --with-python3-stable-abi argument
 Configure miss: /dev/ptc
 Configure miss: /dev/ptc
 Configure miss: /dev/ptc
