@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : vim
-Version  : 9.1.0714
-Release  : 4095
-URL      : https://github.com/vim/vim/archive/v9.1.0714/vim-9.1.0714.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0714/vim-9.1.0714.tar.gz
+Version  : 9.1.0715
+Release  : 4096
+URL      : https://github.com/vim/vim/archive/v9.1.0715/vim-9.1.0715.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0715/vim-9.1.0715.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Python-2.0 Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0714
-cd %{_builddir}/vim-9.1.0714
+%setup -q -n vim-9.1.0715
+cd %{_builddir}/vim-9.1.0715
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0714 buildavx2
+cp -a vim-9.1.0715 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1725403982
+export SOURCE_DATE_EPOCH=1725492903
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1725403982
+export SOURCE_DATE_EPOCH=1725492903
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/runtime/pack/dist/opt/editorconfig/LICENSE.PSF %{buildroot}/usr/share/package-licenses/vim/7c0b791b76ecfa9bbe4c5d6ba252aeb5ad175b04 || :
