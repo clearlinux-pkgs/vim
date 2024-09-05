@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : vim
-Version  : 9.1.0715
-Release  : 4096
-URL      : https://github.com/vim/vim/archive/v9.1.0715/vim-9.1.0715.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0715/vim-9.1.0715.tar.gz
+Version  : 9.1.0718
+Release  : 4097
+URL      : https://github.com/vim/vim/archive/v9.1.0718/vim-9.1.0718.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0718/vim-9.1.0718.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Python-2.0 Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0715
-cd %{_builddir}/vim-9.1.0715
+%setup -q -n vim-9.1.0718
+cd %{_builddir}/vim-9.1.0718
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0715 buildavx2
+cp -a vim-9.1.0718 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1725492903
+export SOURCE_DATE_EPOCH=1725555213
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1725492903
+export SOURCE_DATE_EPOCH=1725555213
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/runtime/pack/dist/opt/editorconfig/LICENSE.PSF %{buildroot}/usr/share/package-licenses/vim/7c0b791b76ecfa9bbe4c5d6ba252aeb5ad175b04 || :
@@ -258,6 +258,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/autoload/gzip.vim
 /usr/share/vim/vim91/autoload/hare.vim
 /usr/share/vim/vim91/autoload/haskellcomplete.vim
+/usr/share/vim/vim91/autoload/hcl.vim
 /usr/share/vim/vim91/autoload/htmlcomplete.vim
 /usr/share/vim/vim91/autoload/javascriptcomplete.vim
 /usr/share/vim/vim91/autoload/modula2.vim
@@ -732,6 +733,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/hare.vim
 /usr/share/vim/vim91/ftplugin/haredoc.vim
 /usr/share/vim/vim91/ftplugin/haskell.vim
+/usr/share/vim/vim91/ftplugin/hcl.vim
 /usr/share/vim/vim91/ftplugin/heex.vim
 /usr/share/vim/vim91/ftplugin/help.vim
 /usr/share/vim/vim91/ftplugin/hgcommit.vim
@@ -1038,6 +1040,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/indent/haml.vim
 /usr/share/vim/vim91/indent/hamster.vim
 /usr/share/vim/vim91/indent/hare.vim
+/usr/share/vim/vim91/indent/hcl.vim
 /usr/share/vim/vim91/indent/hog.vim
 /usr/share/vim/vim91/indent/html.vim
 /usr/share/vim/vim91/indent/htmldjango.vim
@@ -1122,6 +1125,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/indent/tcl.vim
 /usr/share/vim/vim91/indent/tcsh.vim
 /usr/share/vim/vim91/indent/teraterm.vim
+/usr/share/vim/vim91/indent/terraform.vim
 /usr/share/vim/vim91/indent/tex.vim
 /usr/share/vim/vim91/indent/tf.vim
 /usr/share/vim/vim91/indent/thrift.vim
@@ -1794,6 +1798,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/syntax/haste.vim
 /usr/share/vim/vim91/syntax/hastepreproc.vim
 /usr/share/vim/vim91/syntax/hb.vim
+/usr/share/vim/vim91/syntax/hcl.vim
 /usr/share/vim/vim91/syntax/help.vim
 /usr/share/vim/vim91/syntax/help_ru.vim
 /usr/share/vim/vim91/syntax/hercules.vim
@@ -2181,6 +2186,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/syntax/template.vim
 /usr/share/vim/vim91/syntax/teraterm.vim
 /usr/share/vim/vim91/syntax/terminfo.vim
+/usr/share/vim/vim91/syntax/terraform.vim
 /usr/share/vim/vim91/syntax/tex.vim
 /usr/share/vim/vim91/syntax/texinfo.vim
 /usr/share/vim/vim91/syntax/texmf.vim
