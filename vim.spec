@@ -7,7 +7,7 @@
 #
 Name     : vim
 Version  : 9.1.0818
-Release  : 4150
+Release  : 4151
 URL      : https://github.com/vim/vim/archive/v9.1.0818/vim-9.1.0818.tar.gz
 Source0  : https://github.com/vim/vim/archive/v9.1.0818/vim-9.1.0818.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
