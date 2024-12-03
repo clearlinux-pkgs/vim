@@ -6,10 +6,10 @@
 # autospec commit: 5424026
 #
 Name     : vim
-Version  : 9.1.0901
-Release  : 4186
-URL      : https://github.com/vim/vim/archive/v9.1.0901/vim-9.1.0901.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.0901/vim-9.1.0901.tar.gz
+Version  : 9.1.0902
+Release  : 4187
+URL      : https://github.com/vim/vim/archive/v9.1.0902/vim-9.1.0902.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.0902/vim-9.1.0902.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Python-2.0 Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.0901
-cd %{_builddir}/vim-9.1.0901
+%setup -q -n vim-9.1.0902
+cd %{_builddir}/vim-9.1.0902
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.0901 buildavx2
+cp -a vim-9.1.0902 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1733172206
+export SOURCE_DATE_EPOCH=1733258795
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1733172206
+export SOURCE_DATE_EPOCH=1733258795
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/runtime/pack/dist/opt/editorconfig/LICENSE.PSF %{buildroot}/usr/share/package-licenses/vim/7c0b791b76ecfa9bbe4c5d6ba252aeb5ad175b04 || :
@@ -2358,78 +2358,78 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/tutor/README.txt
 /usr/share/vim/vim91/tutor/en/vim-01-beginner.tutor
 /usr/share/vim/vim91/tutor/en/vim-01-beginner.tutor.json
-/usr/share/vim/vim91/tutor/tutor
-/usr/share/vim/vim91/tutor/tutor.bar
-/usr/share/vim/vim91/tutor/tutor.bar.utf-8
-/usr/share/vim/vim91/tutor/tutor.bg.utf-8
-/usr/share/vim/vim91/tutor/tutor.ca
-/usr/share/vim/vim91/tutor/tutor.ca.utf-8
-/usr/share/vim/vim91/tutor/tutor.cs
-/usr/share/vim/vim91/tutor/tutor.cs.cp1250
-/usr/share/vim/vim91/tutor/tutor.cs.utf-8
-/usr/share/vim/vim91/tutor/tutor.da
-/usr/share/vim/vim91/tutor/tutor.da.utf-8
-/usr/share/vim/vim91/tutor/tutor.de
-/usr/share/vim/vim91/tutor/tutor.de.utf-8
-/usr/share/vim/vim91/tutor/tutor.el
-/usr/share/vim/vim91/tutor/tutor.el.cp737
-/usr/share/vim/vim91/tutor/tutor.el.utf-8
-/usr/share/vim/vim91/tutor/tutor.eo
-/usr/share/vim/vim91/tutor/tutor.eo.utf-8
-/usr/share/vim/vim91/tutor/tutor.es
-/usr/share/vim/vim91/tutor/tutor.es.utf-8
-/usr/share/vim/vim91/tutor/tutor.fr
-/usr/share/vim/vim91/tutor/tutor.fr.utf-8
-/usr/share/vim/vim91/tutor/tutor.hr
-/usr/share/vim/vim91/tutor/tutor.hr.cp1250
-/usr/share/vim/vim91/tutor/tutor.hr.utf-8
-/usr/share/vim/vim91/tutor/tutor.hu
-/usr/share/vim/vim91/tutor/tutor.hu.cp1250
-/usr/share/vim/vim91/tutor/tutor.hu.utf-8
-/usr/share/vim/vim91/tutor/tutor.it
-/usr/share/vim/vim91/tutor/tutor.it.utf-8
-/usr/share/vim/vim91/tutor/tutor.ja.euc
-/usr/share/vim/vim91/tutor/tutor.ja.sjis
-/usr/share/vim/vim91/tutor/tutor.ja.utf-8
-/usr/share/vim/vim91/tutor/tutor.ko
-/usr/share/vim/vim91/tutor/tutor.ko.euc
-/usr/share/vim/vim91/tutor/tutor.ko.utf-8
-/usr/share/vim/vim91/tutor/tutor.lt.utf-8
-/usr/share/vim/vim91/tutor/tutor.lv.utf-8
-/usr/share/vim/vim91/tutor/tutor.nb
-/usr/share/vim/vim91/tutor/tutor.nb.utf-8
-/usr/share/vim/vim91/tutor/tutor.nl
-/usr/share/vim/vim91/tutor/tutor.nl.utf-8
-/usr/share/vim/vim91/tutor/tutor.no
-/usr/share/vim/vim91/tutor/tutor.no.utf-8
-/usr/share/vim/vim91/tutor/tutor.pl
-/usr/share/vim/vim91/tutor/tutor.pl.cp1250
-/usr/share/vim/vim91/tutor/tutor.pl.utf-8
-/usr/share/vim/vim91/tutor/tutor.pt
-/usr/share/vim/vim91/tutor/tutor.pt.utf-8
-/usr/share/vim/vim91/tutor/tutor.ru
-/usr/share/vim/vim91/tutor/tutor.ru.cp1251
-/usr/share/vim/vim91/tutor/tutor.ru.utf-8
-/usr/share/vim/vim91/tutor/tutor.sk
-/usr/share/vim/vim91/tutor/tutor.sk.cp1250
-/usr/share/vim/vim91/tutor/tutor.sk.utf-8
-/usr/share/vim/vim91/tutor/tutor.sr.cp1250
-/usr/share/vim/vim91/tutor/tutor.sr.utf-8
-/usr/share/vim/vim91/tutor/tutor.sv
-/usr/share/vim/vim91/tutor/tutor.sv.utf-8
-/usr/share/vim/vim91/tutor/tutor.tr.iso9
-/usr/share/vim/vim91/tutor/tutor.tr.utf-8
 /usr/share/vim/vim91/tutor/tutor.tutor
 /usr/share/vim/vim91/tutor/tutor.tutor.json
-/usr/share/vim/vim91/tutor/tutor.uk.utf-8
-/usr/share/vim/vim91/tutor/tutor.utf-8
-/usr/share/vim/vim91/tutor/tutor.vi.utf-8
 /usr/share/vim/vim91/tutor/tutor.vim
-/usr/share/vim/vim91/tutor/tutor.zh.big5
-/usr/share/vim/vim91/tutor/tutor.zh.euc
-/usr/share/vim/vim91/tutor/tutor.zh.utf-8
-/usr/share/vim/vim91/tutor/tutor.zh_cn.utf-8
-/usr/share/vim/vim91/tutor/tutor.zh_tw.utf-8
+/usr/share/vim/vim91/tutor/tutor1
+/usr/share/vim/vim91/tutor/tutor1.bar
+/usr/share/vim/vim91/tutor/tutor1.bar.utf-8
+/usr/share/vim/vim91/tutor/tutor1.bg.utf-8
+/usr/share/vim/vim91/tutor/tutor1.ca
+/usr/share/vim/vim91/tutor/tutor1.ca.utf-8
+/usr/share/vim/vim91/tutor/tutor1.cs
+/usr/share/vim/vim91/tutor/tutor1.cs.cp1250
+/usr/share/vim/vim91/tutor/tutor1.cs.utf-8
+/usr/share/vim/vim91/tutor/tutor1.da
+/usr/share/vim/vim91/tutor/tutor1.da.utf-8
+/usr/share/vim/vim91/tutor/tutor1.de
+/usr/share/vim/vim91/tutor/tutor1.de.utf-8
+/usr/share/vim/vim91/tutor/tutor1.el
+/usr/share/vim/vim91/tutor/tutor1.el.cp737
+/usr/share/vim/vim91/tutor/tutor1.el.utf-8
+/usr/share/vim/vim91/tutor/tutor1.eo
+/usr/share/vim/vim91/tutor/tutor1.eo.utf-8
+/usr/share/vim/vim91/tutor/tutor1.es
+/usr/share/vim/vim91/tutor/tutor1.es.utf-8
+/usr/share/vim/vim91/tutor/tutor1.fr
+/usr/share/vim/vim91/tutor/tutor1.fr.utf-8
+/usr/share/vim/vim91/tutor/tutor1.hr
+/usr/share/vim/vim91/tutor/tutor1.hr.cp1250
+/usr/share/vim/vim91/tutor/tutor1.hr.utf-8
+/usr/share/vim/vim91/tutor/tutor1.hu
+/usr/share/vim/vim91/tutor/tutor1.hu.cp1250
+/usr/share/vim/vim91/tutor/tutor1.hu.utf-8
+/usr/share/vim/vim91/tutor/tutor1.it
+/usr/share/vim/vim91/tutor/tutor1.it.utf-8
+/usr/share/vim/vim91/tutor/tutor1.ja.euc
+/usr/share/vim/vim91/tutor/tutor1.ja.sjis
+/usr/share/vim/vim91/tutor/tutor1.ja.utf-8
+/usr/share/vim/vim91/tutor/tutor1.ko
+/usr/share/vim/vim91/tutor/tutor1.ko.euc
+/usr/share/vim/vim91/tutor/tutor1.ko.utf-8
+/usr/share/vim/vim91/tutor/tutor1.lt.utf-8
+/usr/share/vim/vim91/tutor/tutor1.lv.utf-8
+/usr/share/vim/vim91/tutor/tutor1.nb
+/usr/share/vim/vim91/tutor/tutor1.nb.utf-8
+/usr/share/vim/vim91/tutor/tutor1.nl
+/usr/share/vim/vim91/tutor/tutor1.nl.utf-8
+/usr/share/vim/vim91/tutor/tutor1.no
+/usr/share/vim/vim91/tutor/tutor1.no.utf-8
+/usr/share/vim/vim91/tutor/tutor1.pl
+/usr/share/vim/vim91/tutor/tutor1.pl.cp1250
+/usr/share/vim/vim91/tutor/tutor1.pl.utf-8
+/usr/share/vim/vim91/tutor/tutor1.pt
+/usr/share/vim/vim91/tutor/tutor1.pt.utf-8
+/usr/share/vim/vim91/tutor/tutor1.ru
+/usr/share/vim/vim91/tutor/tutor1.ru.cp1251
+/usr/share/vim/vim91/tutor/tutor1.ru.utf-8
+/usr/share/vim/vim91/tutor/tutor1.sk
+/usr/share/vim/vim91/tutor/tutor1.sk.cp1250
+/usr/share/vim/vim91/tutor/tutor1.sk.utf-8
+/usr/share/vim/vim91/tutor/tutor1.sr.cp1250
+/usr/share/vim/vim91/tutor/tutor1.sr.utf-8
+/usr/share/vim/vim91/tutor/tutor1.sv
+/usr/share/vim/vim91/tutor/tutor1.sv.utf-8
+/usr/share/vim/vim91/tutor/tutor1.tr.iso9
+/usr/share/vim/vim91/tutor/tutor1.tr.utf-8
+/usr/share/vim/vim91/tutor/tutor1.uk.utf-8
+/usr/share/vim/vim91/tutor/tutor1.utf-8
+/usr/share/vim/vim91/tutor/tutor1.vi.utf-8
+/usr/share/vim/vim91/tutor/tutor1.zh.big5
+/usr/share/vim/vim91/tutor/tutor1.zh.euc
+/usr/share/vim/vim91/tutor/tutor1.zh.utf-8
+/usr/share/vim/vim91/tutor/tutor1.zh_cn.utf-8
+/usr/share/vim/vim91/tutor/tutor1.zh_tw.utf-8
 /usr/share/vim/vim91/tutor/tutor2
 /usr/share/vim/vim91/tutor/tutor2.utf-8
 /usr/share/vim/vim91/vimrc_example.vim
