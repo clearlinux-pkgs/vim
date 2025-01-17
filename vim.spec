@@ -6,10 +6,10 @@
 # autospec commit: f4a13a5
 #
 Name     : vim
-Version  : 9.1.1024
-Release  : 4228
-URL      : https://github.com/vim/vim/archive/v9.1.1024/vim-9.1.1024.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.1024/vim-9.1.1024.tar.gz
+Version  : 9.1.1029
+Release  : 4229
+URL      : https://github.com/vim/vim/archive/v9.1.1029/vim-9.1.1029.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.1029/vim-9.1.1029.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Python-2.0 Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.1024
-cd %{_builddir}/vim-9.1.1024
+%setup -q -n vim-9.1.1029
+cd %{_builddir}/vim-9.1.1029
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.1024 buildavx2
+cp -a vim-9.1.1029 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1737060390
+export SOURCE_DATE_EPOCH=1737126366
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1737060390
+export SOURCE_DATE_EPOCH=1737126366
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/runtime/pack/dist/opt/editorconfig/LICENSE.PSF %{buildroot}/usr/share/package-licenses/vim/7c0b791b76ecfa9bbe4c5d6ba252aeb5ad175b04 || :
@@ -232,6 +232,8 @@ install ./vim-minimal %{buildroot}/usr/bin/
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/vim/vim91/LICENSE
+/usr/share/vim/vim91/README.txt
 /usr/share/vim/vim91/autoload/README.txt
 /usr/share/vim/vim91/autoload/RstFold.vim
 /usr/share/vim/vim91/autoload/ada.vim
@@ -263,9 +265,6 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/autoload/javaformat.vim
 /usr/share/vim/vim91/autoload/javascriptcomplete.vim
 /usr/share/vim/vim91/autoload/modula2.vim
-/usr/share/vim/vim91/autoload/netrw.vim
-/usr/share/vim/vim91/autoload/netrwSettings.vim
-/usr/share/vim/vim91/autoload/netrw_gitignore.vim
 /usr/share/vim/vim91/autoload/paste.vim
 /usr/share/vim/vim91/autoload/phpcomplete.vim
 /usr/share/vim/vim91/autoload/python.vim
@@ -555,7 +554,6 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/doc/syntax.txt
 /usr/share/vim/vim91/doc/tabpage.txt
 /usr/share/vim/vim91/doc/tags
-/usr/share/vim/vim91/doc/tags-ru
 /usr/share/vim/vim91/doc/tagsrch.txt
 /usr/share/vim/vim91/doc/term.txt
 /usr/share/vim/vim91/doc/terminal.txt
@@ -563,7 +561,6 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/doc/textprop.txt
 /usr/share/vim/vim91/doc/tips.txt
 /usr/share/vim/vim91/doc/todo.txt
-/usr/share/vim/vim91/doc/uganda.rux
 /usr/share/vim/vim91/doc/uganda.txt
 /usr/share/vim/vim91/doc/undo.txt
 /usr/share/vim/vim91/doc/userfunc.txt
@@ -1528,6 +1525,14 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/pack/dist/opt/matchit/doc/matchit.txt
 /usr/share/vim/vim91/pack/dist/opt/matchit/doc/tags
 /usr/share/vim/vim91/pack/dist/opt/matchit/plugin/matchit.vim
+/usr/share/vim/vim91/pack/dist/opt/netrw/LICENSE.txt
+/usr/share/vim/vim91/pack/dist/opt/netrw/README.md
+/usr/share/vim/vim91/pack/dist/opt/netrw/autoload/netrw.vim
+/usr/share/vim/vim91/pack/dist/opt/netrw/autoload/netrwSettings.vim
+/usr/share/vim/vim91/pack/dist/opt/netrw/autoload/netrw_gitignore.vim
+/usr/share/vim/vim91/pack/dist/opt/netrw/doc/netrw.txt
+/usr/share/vim/vim91/pack/dist/opt/netrw/plugin/netrwPlugin.vim
+/usr/share/vim/vim91/pack/dist/opt/netrw/syntax/netrw.vim
 /usr/share/vim/vim91/pack/dist/opt/nohlsearch/plugin/nohlsearch.vim
 /usr/share/vim/vim91/pack/dist/opt/shellmenu/plugin/shellmenu.vim
 /usr/share/vim/vim91/pack/dist/opt/swapmouse/plugin/swapmouse.vim
@@ -2011,7 +2016,6 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/syntax/neomuttlog.vim
 /usr/share/vim/vim91/syntax/neomuttrc.vim
 /usr/share/vim/vim91/syntax/netrc.vim
-/usr/share/vim/vim91/syntax/netrw.vim
 /usr/share/vim/vim91/syntax/nginx.vim
 /usr/share/vim/vim91/syntax/ninja.vim
 /usr/share/vim/vim91/syntax/nix.vim
