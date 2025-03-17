@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : vim
-Version  : 9.1.1202
-Release  : 4295
-URL      : https://github.com/vim/vim/archive/v9.1.1202/vim-9.1.1202.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.1202/vim-9.1.1202.tar.gz
+Version  : 9.1.1215
+Release  : 4296
+URL      : https://github.com/vim/vim/archive/v9.1.1215/vim-9.1.1215.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.1215/vim-9.1.1215.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Python-2.0 Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.1202
-cd %{_builddir}/vim-9.1.1202
+%setup -q -n vim-9.1.1215
+cd %{_builddir}/vim-9.1.1215
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.1202 buildavx2
+cp -a vim-9.1.1215 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1741976237
+export SOURCE_DATE_EPOCH=1742221048
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1741976237
+export SOURCE_DATE_EPOCH=1742221048
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/runtime/pack/dist/opt/editorconfig/LICENSE.PSF %{buildroot}/usr/share/package-licenses/vim/7c0b791b76ecfa9bbe4c5d6ba252aeb5ad175b04 || :
@@ -2101,6 +2101,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/syntax/promela.vim
 /usr/share/vim/vim91/syntax/proto.vim
 /usr/share/vim/vim91/syntax/protocols.vim
+/usr/share/vim/vim91/syntax/prql.vim
 /usr/share/vim/vim91/syntax/ps1.vim
 /usr/share/vim/vim91/syntax/ps1xml.vim
 /usr/share/vim/vim91/syntax/psf.vim
@@ -2405,6 +2406,10 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/tutor/en/vim-02-beginner.tutor.json
 /usr/share/vim/vim91/tutor/it/vim-01-beginner.tutor
 /usr/share/vim/vim91/tutor/it/vim-01-beginner.tutor.json
+/usr/share/vim/vim91/tutor/ru/vim-01-beginner.tutor
+/usr/share/vim/vim91/tutor/ru/vim-01-beginner.tutor.json
+/usr/share/vim/vim91/tutor/ru/vim-02-beginner.tutor
+/usr/share/vim/vim91/tutor/ru/vim-02-beginner.tutor.json
 /usr/share/vim/vim91/tutor/sr/vim-01-beginner.tutor
 /usr/share/vim/vim91/tutor/sr/vim-01-beginner.tutor.json
 /usr/share/vim/vim91/tutor/sr/vim-02-beginner.tutor
@@ -2484,6 +2489,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/tutor/tutor2
 /usr/share/vim/vim91/tutor/tutor2.it
 /usr/share/vim/vim91/tutor/tutor2.it.utf-8
+/usr/share/vim/vim91/tutor/tutor2.ru.utf-8
 /usr/share/vim/vim91/tutor/tutor2.sr.utf-8
 /usr/share/vim/vim91/tutor/tutor2.utf-8
 /usr/share/vim/vim91/vimrc_example.vim
