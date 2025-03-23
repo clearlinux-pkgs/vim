@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : vim
-Version  : 9.1.1230
-Release  : 4303
-URL      : https://github.com/vim/vim/archive/v9.1.1230/vim-9.1.1230.tar.gz
-Source0  : https://github.com/vim/vim/archive/v9.1.1230/vim-9.1.1230.tar.gz
+Version  : 9.1.1231
+Release  : 4304
+URL      : https://github.com/vim/vim/archive/v9.1.1231/vim-9.1.1231.tar.gz
+Source0  : https://github.com/vim/vim/archive/v9.1.1231/vim-9.1.1231.tar.gz
 Summary  : A highly configurable, improved version of the vi text editor
 Group    : Development/Tools
 License  : LGPL-2.1 MIT Python-2.0 Vim
@@ -83,12 +83,12 @@ man components for the vim package.
 
 
 %prep
-%setup -q -n vim-9.1.1230
-cd %{_builddir}/vim-9.1.1230
+%setup -q -n vim-9.1.1231
+cd %{_builddir}/vim-9.1.1231
 %patch -P 1 -p1
 %patch -P 2 -p1
 pushd ..
-cp -a vim-9.1.1230 buildavx2
+cp -a vim-9.1.1231 buildavx2
 popd
 
 %build
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1742579602
+export SOURCE_DATE_EPOCH=1742726584
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -173,7 +173,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1742579602
+export SOURCE_DATE_EPOCH=1742726584
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/vim
 cp %{_builddir}/vim-%{version}/runtime/pack/dist/opt/editorconfig/LICENSE.PSF %{buildroot}/usr/share/package-licenses/vim/7c0b791b76ecfa9bbe4c5d6ba252aeb5ad175b04 || :
@@ -943,6 +943,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/ftplugin/snakemake.vim
 /usr/share/vim/vim91/ftplugin/solidity.vim
 /usr/share/vim/vim91/ftplugin/solution.vim
+/usr/share/vim/vim91/ftplugin/spajson.vim
 /usr/share/vim/vim91/ftplugin/spec.vim
 /usr/share/vim/vim91/ftplugin/sql.vim
 /usr/share/vim/vim91/ftplugin/squirrel.vim
@@ -1162,6 +1163,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/indent/sh.vim
 /usr/share/vim/vim91/indent/sml.vim
 /usr/share/vim/vim91/indent/solidity.vim
+/usr/share/vim/vim91/indent/spajson.vim
 /usr/share/vim/vim91/indent/sql.vim
 /usr/share/vim/vim91/indent/sqlanywhere.vim
 /usr/share/vim/vim91/indent/sshconfig.vim
@@ -2218,6 +2220,7 @@ install ./vim-minimal %{buildroot}/usr/bin/
 /usr/share/vim/vim91/syntax/snnsres.vim
 /usr/share/vim/vim91/syntax/snobol4.vim
 /usr/share/vim/vim91/syntax/solidity.vim
+/usr/share/vim/vim91/syntax/spajson.vim
 /usr/share/vim/vim91/syntax/spec.vim
 /usr/share/vim/vim91/syntax/specman.vim
 /usr/share/vim/vim91/syntax/spice.vim
