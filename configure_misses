@@ -142,10 +142,6 @@ Configure miss: X11/SM/SMlib.h
 Configure miss: X11/SM/SMlib.h
 Configure miss: X11/SM/SMlib.h
 Configure miss: X11/SM/SMlib.h
-Configure miss: XATTR_NAME_SMACKEXEC in linux/xattr.h
-Configure miss: XATTR_NAME_SMACKEXEC in linux/xattr.h
-Configure miss: XATTR_NAME_SMACKEXEC in linux/xattr.h
-Configure miss: XATTR_NAME_SMACKEXEC in linux/xattr.h
 Configure miss: _xpg4_setrunelocale in -lxpg4
 Configure miss: _xpg4_setrunelocale in -lxpg4
 Configure miss: _xpg4_setrunelocale in -lxpg4
@@ -166,6 +162,10 @@ Configure miss: frame.h
 Configure miss: frame.h
 Configure miss: frame.h
 Configure miss: frame.h
+Configure miss: gcc option to enable large file support
+Configure miss: gcc option to enable large file support
+Configure miss: gcc option to enable large file support
+Configure miss: gcc option to enable large file support
 Configure miss: getcwd implementation is broken
 Configure miss: getcwd implementation is broken
 Configure miss: getcwd implementation is broken
