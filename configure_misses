@@ -182,6 +182,10 @@ Configure miss: if character set is EBCDIC
 Configure miss: if character set is EBCDIC
 Configure miss: if character set is EBCDIC
 Configure miss: if character set is EBCDIC
+Configure miss: if wayland client header files can be found
+Configure miss: if wayland client header files can be found
+Configure miss: if wayland client header files can be found
+Configure miss: if wayland client header files can be found
 Configure miss: libc.h
 Configure miss: libc.h
 Configure miss: libc.h
