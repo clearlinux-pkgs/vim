@@ -246,8 +246,6 @@ Configure miss: util/msg18n.h
 Configure miss: util/msg18n.h
 Configure miss: wayland
 Configure miss: wayland
-Configure miss: wayland
-Configure miss: wayland
 Configure miss: whether stack_t has an ss_base field
 Configure miss: whether stack_t has an ss_base field
 Configure miss: whether stack_t has an ss_base field
